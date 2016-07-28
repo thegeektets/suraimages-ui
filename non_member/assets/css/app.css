@@ -132,6 +132,8 @@
 	display: block;
 	width: 10%;
 	background: #f8991c;
+  text-align: center;
+  padding-top: 6px;
 }
 
 .footer-bar {
