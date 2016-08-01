@@ -68,7 +68,7 @@
 .menu-divider:after {
 	content: "";
     display: inline-block;
-    background: url('../icons/divider.png') no-repeat; 
+    background: url('../icons/divider.png') repeat-y; 
     width: 2px;
     height: 20px;
     float: right;

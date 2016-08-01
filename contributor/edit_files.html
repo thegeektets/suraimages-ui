@@ -94,6 +94,66 @@
                     </div>
                  </div> 
                  <div class="edit_content">
+                      <div class="tab_content">
+                         Shows us what you are good at by submitting atleast 5 of your best images in JPEG format. Make sure the images are
+                          of high quality with a minimum file size of 8MB each.
+                              
+                          <form action="./assets/filer/php/upload.php" method="post" enctype="multipart/form-data">
+                                 <input type="file" name="files[]"  id="filer_input" multiple="multiple">
+                          </form>
+                         
+
+                      </div>
+                         <div class="row">
+                             <div class="large-5 columns medium-5 columns pull-left">
+                                 <form class="reports_search">
+                                   <select class="inside_search_slc" id="report_slc">
+                                       <option value=""> Action </option>
+                                       <option value=""> Add Title </option>
+                                       <option value=""> Add Keywords </option>
+                                       <option value=""> Set Price </option>
+                                       <option value=""> Image Type </option>
+                                       <option value=""> Image Subtype </option>
+                                       <option value=""> Orientation </option>
+                                       <option value=""> People </option>
+                                       <option value=""> Attach Release </option>
+                                       <option value=""> Same Shoot </option>
+                                       <option value=""> Model Notification </option>
+                                       <option value="" class="delete_option"> Delete </option>
+                                       
+                                   </select>
+                                   <span class="question_wrap">
+                                       <span class="question_this">
+                                          <img src="assets/icons/question.png">
+                                       </span>
+                                       <span class="question_text">
+                                            <a class="question_close">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </a>
+                                            Actions help you apply multiple commands on multiple files all at once. How
+                                            does it work? First select the multiple files you want to Action by clicking on
+                                            checkbox(s) on the left side of each file then choose an action under the
+                                            “Actions” dropdown menu and the click “Apply” button.
+                                            Every action you chose under the dropdown menu has the help message specific
+                                            explaining about that action. Simply move your mouse over the question mark.
+                                       </span>
+                                   </span>
+                                     
+                                 </form>
+                             </div>
+                       </div>
+                       <div class="row">
+                         <form class="reports_search large-6 columns pull-left">
+                            <div class="add_title">
+                             Add Title  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                         </form>
+                       </div>
+                       <div style="clear: both"></div>        
                       <div class="edit_item">
                         <div class="row">
                           <div class="large-2 column">
@@ -102,14 +162,28 @@
                               <img src="assets/img/search_image.png" class="edit_file_img">
                           </div>
                           <div class="large-4 column">
-                                  <label>Title : *</label>
+                                  <label>Title : <span class="required_asteric">*</span></label>
                                   <input type="text" name="" placeholder="Name" class="form_group">
-                                  <label> Key Words : *</label>
+                                  <label> Key Words : <span class="required_asteric">*</span></label>
                                   <textarea  name="" placeholder="0000">
                                   </textarea>
                           </div>
                           <div class="large-3 column">
-                                Set Price
+                                Set Price 
+                                <span class="question_wrap">
+                                    <span class="question_this">
+                                       <img src="assets/icons/question.png">
+                                    </span>
+                                    <span class="question_text">
+                                         <a class="question_close">
+                                             <i class="fa fa-times" aria-hidden="true"></i>
+                                         </a>
+                                         This is a quick way of setting a similar price on multiple files. Please note your price should
+                                          not be more than $150 or less than $20. Also, you only set the price for the large file the
+                                          rest will be generated automatic based on the % per price of the large file i.e Medium file is
+                                          54% the price of the large file and Small file is 22% the price of the large file
+                                    </span>
+                                </span>
                                 <div class="row">
                                     <div class="large-4 columns">
                                           <input type="text" name="" placeholder="Price" class="form_group">
@@ -127,7 +201,7 @@
                                 <div class="row">
                                   <form>
                                     <div class="large-6 columns">
-                                        <label>Category:*</label>
+                                        <label>Category:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -135,7 +209,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>Image Type:*</label>
+                                        <label>Image Type:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -143,7 +217,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>Image Subtype:*</label>
+                                        <label>Image Subtype:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -151,7 +225,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>Orientation:*</label>
+                                        <label>Orientation:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -159,7 +233,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>People:*</label>
+                                        <label>People:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -172,14 +246,37 @@
                           </div>
                           <div class="large-3 column">
                                 Attach Realeses
-                                <form action="" method="post" enctype="multipart/form-data">
-                                       <input type="file" name="files[]"  multiple="multiple" class="release_filer">
-                                      <input class="button file-upload" type="submit" value="Upload Files">
-                                </form>
-                                Model Notification
+                                  <span class="question_wrap">
+                                      <span class="question_this">
+                                         <img src="assets/icons/question.png">
+                                      </span>
+                                      <span class="question_text">
+                                           <a class="question_close">
+                                               <i class="fa fa-times" aria-hidden="true"></i>
+                                           </a>
+                                           If some of your multiple files have the same model or property you can assign that release form on multiple
+files by selecting the files then pick the relevant release form from the dropdown menu then click attach.
+NB: You must first upload all your release forms in the Release Upload before assigning them to the files.
+                                      </span>
+                                  </span>
                                 <div class="large-12 columns">
                                      <div class="row collapse">
                                        <div class="small-10 columns">
+                                         <select placeholder="Pick Releases">
+                                         </select>
+                                       </div>
+                                       <div class="small-2 columns">
+                                         <a href="#" class="button postfix">Attach</a>
+                                       </div>
+                                      </div>
+                                </div>
+
+                               
+                                <div class="large-12 columns">
+                                     <div class="row collapse">
+                                         Model Notification
+                                       <div class="small-10 columns">
+
                                          <input type="text" placeholder="Model Email Address">
                                        </div>
                                        <div class="small-2 columns">
@@ -199,9 +296,9 @@
                               <img src="assets/img/search_image.png" class="edit_file_img">
                           </div>
                           <div class="large-4 column">
-                                  <label>Title : *</label>
+                                  <label>Title : <span class="required_asteric">*</span></label>
                                   <input type="text" name="" placeholder="Name" class="form_group">
-                                  <label> Key Words : *</label>
+                                  <label> Key Words : <span class="required_asteric">*</span></label>
                                   <textarea  name="" placeholder="0000">
                                   </textarea>
                           </div>
@@ -224,7 +321,7 @@
                                 <div class="row">
                                   <form>
                                     <div class="large-6 columns">
-                                        <label>Category:*</label>
+                                        <label>Category:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -232,7 +329,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>Image Type:*</label>
+                                        <label>Image Type:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -240,7 +337,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>Image Subtype:*</label>
+                                        <label>Image Subtype:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -248,7 +345,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>Orientation:*</label>
+                                        <label>Orientation:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -256,7 +353,7 @@
                                         </select>
                                     </div>
                                     <div class="large-6 columns">
-                                        <label>People:*</label>
+                                        <label>People:<span class="required_asteric">*</span></label>
                                     </div>
                                     <div class="large-6 columns">
                                         <select>
@@ -269,13 +366,21 @@
                           </div>
                           <div class="large-3 column">
                                 Attach Realeses
-                                <form action="" method="post" enctype="multipart/form-data">
-                                       <input type="file" name="files[]"  multiple="multiple" class="release_filer">
-                                      <input class="button file-upload" type="submit" value="Upload Files">
-                                </form>
-                                Model Notification
                                 <div class="large-12 columns">
                                      <div class="row collapse">
+                                       <div class="small-10 columns">
+                                         <select placeholder="Pick Releases">
+                                         </select>
+                                       </div>
+                                       <div class="small-2 columns">
+                                         <a href="#" class="button postfix">Attach</a>
+                                       </div>
+                                      </div>
+                                </div>
+                              
+                                <div class="large-12 columns">
+                                     <div class="row collapse">
+                                       Model Notification
                                        <div class="small-10 columns">
                                          <input type="text" placeholder="Model Email Address">
                                        </div>
@@ -293,7 +398,7 @@
                         <div class="row">
                    
                           <div class="pull-right">
-                              <a href="#" class="button postfix">Submit For Approval </a>
+                              <a href="#" class="button btn_upload_id">Submit For Approval </a>
                           </div>
                          </div>
                       </div>

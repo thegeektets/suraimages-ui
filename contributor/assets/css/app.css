@@ -69,7 +69,7 @@
 .menu-divider:after {
 	content: "";
     display: inline-block;
-    background: url('../icons/divider.png') no-repeat; 
+    background: url('../icons/divider.png') repeat-y; 
     width: 2px;
     height: 20px;
     float: right;
@@ -365,6 +365,9 @@
      font-size: 14px;
      height: 30px;
      box-shadow:none;
+ }
+ .reports_search > .inside_search_slc {
+    border: none;
  }
  .inside_search_slc {
      height: 30px;
@@ -786,6 +789,19 @@ ul#menu_account::before {
 .intro_section > .user_details {
   border-right:1px solid;
 }
+.user_avatar_wrap {
+    width: 160px;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+.user_upload {
+    font-size: 10px;
+    color: #fff;
+    position: absolute;
+    top: 10vh;
+    left: 1vw;
+}
 .user_avatar {
   width:150px;
   display:inline-block;
@@ -941,6 +957,8 @@ ul#menu_account::before {
   float: right; 
   margin-top:40px;
   margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .btn_upload_id:hover {
@@ -1007,6 +1025,7 @@ ul#menu_account::before {
 /* images Section */
 
 .file-upload {
+  text-transform: uppercase;
   position: relative;
   overflow: hidden;
   margin: 10px;
@@ -1015,6 +1034,7 @@ ul#menu_account::before {
   margin-top: 35px;
   background-color: #f8991c; 
   color:#fff;
+  font-weight: 700;
 }
 
 .file-upload:hover , .file-upload:focus {
@@ -1087,7 +1107,7 @@ ul#menu_account::before {
       float: left;
   }
   .postfix , .postfix:hover , .postfix:active , .postfix:focus {
-      background: #f8991c;
+     background: #333;
   }
 
   /*Sales Section */
@@ -1114,6 +1134,8 @@ ul#menu_account::before {
   .sales_filter,.statement_filter ,.license_filter , .files_filter {
     padding-right: 10px;
     padding-left: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   .edit_files_section {
@@ -1131,7 +1153,7 @@ ul#menu_account::before {
   /*Report Section */
   .tab_report {
       font-family: 'Raleway', sans-serif;
-      font-size: 14px;
+      font-size: 12px;
       width: 90%;
       margin: 0 auto;
       padding-top: 10px;
@@ -1275,3 +1297,67 @@ ul#menu_account::before {
   width: 14px;
   margin-right:5px;
  }
+
+ /* corrections css */
+ input.inline_input {
+     display: inline-block;
+     width: 60%;
+     margin-left: 5px;
+ }
+
+ .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+     content: '';
+     display: block;
+     width: 0;
+     height: 0;
+     border: inset 5px;
+     border-color: #f8991c transparent transparent;
+     border-top-style: solid;
+     border-bottom-width: 0;
+     right: 5px;
+     margin-top: -2px;
+ }
+ label {
+     position: relative;
+ }
+ .required_asteric {
+    font-size: 24px;
+    margin-left: 5px;
+    color: #ed272f;
+    position: absolute;
+}
+.question_wrap {
+  position: relative;
+}
+
+.question_this {
+    height: 24px;
+    padding: 5px;
+  
+    text-align: center;
+}
+.question_this > img {
+    height: 14px;
+    margin-top: 5px;
+    
+}
+.question_text {
+    display: block;
+    padding: 15px;
+    padding-top: 20px;
+    font-size: 12px;
+    background-color: #fff6be;
+    position: absolute;
+    width: 500px;
+    bottom: 100%;
+    left: 0%;
+    margin-bottom: 10px;
+}
+
+.question_close {
+    color: #333;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  
+}

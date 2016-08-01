@@ -48,8 +48,8 @@
           </ul>
           <div class="menu_switch">
               <a href="#">
-                  <img src="assets/img/change_account.png">
-                  Switch to Contributor
+                  <img src="assets/img/switch.png">
+                  Switch to Member
               </a>
           </div>
         </div>
@@ -62,7 +62,12 @@
       <div class="row">
           <div class="intro_section">
             <div class="large-6 columns pull-left user_details">
-                <img src="assets/img/user_avatar.png" class="user_avatar">
+                <div class="user_avatar_wrap">
+                  <img src="assets/img/user_avatar.png" class="user_avatar">
+                  <div class="user_upload">
+                    Upload your profile photo                  
+                  </div>
+                </div>
                 <div class="user_name">
                     gngechu
                 </div>
@@ -112,7 +117,7 @@
                                       <div class="tabs-content" data-tabs-content="account-tabs">
                                             <div class="tabs-panel is-active" id="identification">
                                                     <div class="tab_title">
-                                                        Upload your identification details: *
+                                                        Upload your identification details: <span class="required_asteric">*</span>
                                                     </div>
                                                     <div class="tab_content">
                                                         For purposes of getting to know the contributor we are dealing with we recommend the following identification;
@@ -148,25 +153,25 @@
 
                                                       <form class="contact_info">
                                                         <div class="large-4 columns">
-                                                          <label>First Name : *</label>
+                                                          <label>First Name : <span class="required_asteric">*</span></label>
                                                           <input type="text" name="" placeholder="Name" class="form_group">
-                                                          <label>Postal Address : *</label>
+                                                          <label>Postal Address : <span class="required_asteric">*</span></label>
                                                           <input type="text" name="" placeholder="0000" class="form_group">
-                                                          <label>City/Town : *</label>
+                                                          <label>City/Town : <span class="required_asteric">*</span></label>
                                                           <input type="text" name="" placeholder="Nairobi" class="form_group">
-                                                          <label>Telephone Number : *</label>
+                                                          <label>Telephone Number : <span class="required_asteric">*</span></label>
                                                           <input type="text" name="" placeholder="0000" class="form_group">
                                                         </div>
                                                         <div class="large-4 columns">
-                                                          <label>Middle Name: *</label>
+                                                          <label>Middle Name: <span class="required_asteric">*</span></label>
                                                           <input type="text" name="" placeholder="Name" class="form_group">
                                                           <label>2 Postal Address (Optional)</label>
                                                           <input type="text" name="" placeholder="0000" class="form_group">
-                                                          <label>Country: *</label>
+                                                          <label>Country: <span class="required_asteric">*</span></label>
                                                           <select  name="" class="form_group">
                                                               <option>Kenya</option>
                                                           </select>
-                                                          <label>Email: *</label>
+                                                          <label>Email: <span class="required_asteric">*</span></label>
                                                           <input type="text" name="" placeholder="gngechu@gmail.com" class="form_group">
                                                         </div>
                                                         <div class="large-4 columns">
@@ -198,17 +203,17 @@
                                                             <div class="tab_title">
                                                                Bank Payment:
                                                            </div>
-                                                            <label>Bank Name: *</label>
+                                                            <label>Bank Name: <span class="required_asteric">*</span></label>
                                                                 <input type="text" name="" placeholder="Bank Name" class="form_group">
 
-                                                            <label>Account Name: *</label>
+                                                            <label>Account Name: <span class="required_asteric">*</span></label>
                                                                 <input type="text" name="" placeholder="Account Name" class="form_group">
 
 
-                                                            <label>Account Number: *</label>
+                                                            <label>Account Number: <span class="required_asteric">*</span></label>
                                                                 <input type="text" name="" placeholder="Account Number" class="form_group">
 
-                                                            <label>Branch Name: *</label>
+                                                            <label>Branch Name: <span class="required_asteric">*</span></label>
                                                                 <input type="text" name="" placeholder="Branch Name" class="form_group">
 
                                                             </div>
@@ -217,12 +222,12 @@
                                                               <div class="tab_title">
                                                                Mobile Payment:
                                                                </div>
-                                                               <label>Mobile Number: *</label>
+                                                               <label>Mobile Number: <span class="required_asteric">*</span></label>
                                                                    <input type="text" name="" placeholder="Mobile Number" class="form_group">
                                                               <div class="tab_title">
                                                                Email Payment:
                                                                </div>
-                                                               <label>Email Address: *</label>
+                                                               <label>Email Address: <span class="required_asteric">*</span></label>
                                                                    <input type="text" name="" placeholder="Email Address" class="form_group">
 
                                                            </div>
@@ -244,14 +249,14 @@
                                                             
                                                                <div class="large-6 columns">
                                                               
-                                                                <label>Old Password *</label>
+                                                                <label>Old Password <span class="required_asteric">*</span></label>
                                                                     <input type="password" name="" placeholder="Old Password" class="form_group">
 
-                                                                <label>New Password *</label>
+                                                                <label>New Password <span class="required_asteric">*</span></label>
                                                                     <input type="password" name="" placeholder="New Password" class="form_group">
 
 
-                                                                <label>Confirm Password *</label>
+                                                                <label>Confirm Password <span class="required_asteric">*</span></label>
                                                                     <input type="password" name="" placeholder="Confirm Password" class="form_group">
 
                                                           </form>

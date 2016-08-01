@@ -85,7 +85,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$(".sales_filter").hide();
+	//$(".sales_filter").hide();
 	$(".statement_filter").hide();
 	$(".license_filter").hide();
 	$(".files_filter").hide();
@@ -144,7 +144,18 @@ $(document).ready(function(){
 		
 		$('.select_file').prop('checked', $(this).prop("checked"));
 		
-	})
+	});
+	
+	$('.question_text').hide();
+	$('.question_this').click(function (){
+		
+		$('.question_text').hide();
+		$(this).parents('.question_wrap').find('.question_text').show();
+		
+	});
+	$('.question_close').click(function (){
+		$('.question_text').hide();
+	});
 	$('.similar-images').slick({
 	        infinite: true,
 	          slidesToShow: 3,
