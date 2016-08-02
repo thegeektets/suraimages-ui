@@ -598,7 +598,8 @@ ul.accordion.search_accordion {
 .tabs-content {
   background: inherit;
   border: none;
-  min-height: 500px;
+  min-height: 400px;
+  position: relative;
 }
 .tabs {
 	background: inherit;
@@ -919,12 +920,17 @@ button.slick-next.slick-arrow {
    margin-bottom: 30px;
 }
 .btn_upload_id {
-  background-color: #f8991c;
-  color: #fff;
-  display:block;
-  float: right; 
-  margin-top:40px;
-  margin-bottom: 20px;
+    background-color: #f8991c;
+    color: #fff;
+    display: block;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 80%;
+    position: absolute;
+    right: 10px
 }
 
 .btn_upload_id:hover {
@@ -1351,6 +1357,8 @@ button.slick-next.slick-arrow {
     float: right; 
     margin-top:40px;
     margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 
   .btn_checkout:hover {
@@ -1410,17 +1418,20 @@ button.slick-next.slick-arrow {
       
   }
   .question_text {
-      display: block;
-      padding: 15px;
-      padding-top: 20px;
-      font-size: 12px;
-      background-color: #fff6be;
-      position: absolute;
-      width: 500px;
-      bottom: 100%;
-      left: 0%;
-      margin-bottom: 10px;
-  }
+    display: block;
+    padding: 15px;
+    padding-top: 20px;
+    font-size: 12px;
+    background-color: #fff6be;
+    position: absolute;
+    width: 30vw;
+    bottom: 100%;
+    left: 0%;
+    margin-bottom: 10px;
+    text-transform: none;
+    font-weight: 500;
+}
+
 
   .question_close {
       color: #333;

@@ -147,12 +147,17 @@ $(document).ready(function(){
 	});
 	
 	$('.question_text').hide();
-	$('.question_this').click(function (){
-		
-		$('.question_text').hide();
-		$(this).parents('.question_wrap').find('.question_text').show();
-		
-	});
+	$('.question_this').hover(
+	  function() {
+	    
+	    $(this).parents('.question_wrap').find('.question_text').show();
+	  }, function() {
+	   $('.question_text').hide();
+	   
+	  }
+	);
+	
+	
 	$('.question_close').click(function (){
 		$('.question_text').hide();
 	});
@@ -166,7 +171,198 @@ $(document).ready(function(){
 
 });
    
+$(".add_keywords").hide();
+$(".set_price").hide();
+$(".image_type").hide();
+$(".image_subtype").hide();
+$(".orientation").hide();
+$(".attach_release").hide();
+$(".same_shoot").hide();
+$(".model_notification").hide();
+$(".people").hide();
+$(".set_price").hide();
 
+$("#edit_slc").on('change',function(){
+	if($(this).val().length > 1) {
+		
+		if($(this).val() === 'Title'){
+			
+			$(".title").show();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+		}
+
+		if($(this).val() === 'Keywords'){
+			
+			$(".title").hide();
+			$(".add_keywords").show();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+		}
+		
+		if($(this).val() === 'Price'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").show();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			
+				
+				
+		}
+		if($(this).val() === 'Image Type'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").show();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+				
+		}
+		if($(this).val() === 'Image Subtype'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").show();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+				
+		}
+		if($(this).val() === 'Orientation'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").show();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+				
+		}
+		if($(this).val() === 'People'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").show();
+			$(".set_price").hide();
+				
+				
+		}
+		if($(this).val() === 'Attach Release'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").show();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+				
+		}
+		if($(this).val() === 'Same Shoot'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").show();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+				
+		}
+		if($(this).val() === 'Model Notification'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").show();
+			$(".people").hide();
+			$(".set_price").hide();
+				
+				
+		}
+		
+
+
+	} else {
+		$(".title").hide();
+		$(".add_keywords").hide();
+		$(".set_price").hide();
+		$(".image_type").hide();
+		$(".image_subtype").hide();
+		$(".orientation").hide();
+		$(".attach_release").hide();
+		$(".same_shoot").hide();
+		$(".model_notification").hide();
+		$(".people").hide();
+		$(".set_price").hide();
+	}
+
+})
 
 ;(function($) {
 

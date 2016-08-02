@@ -152,7 +152,22 @@ $(document).ready(function(){
 		
 		$('.select_file').prop('checked', $(this).prop("checked"));
 		
-	})
+	});
+	$('.question_text').hide();
+	$('.question_this').hover(
+	  function() {
+	    
+	    $(this).parents('.question_wrap').find('.question_text').show();
+	  }, function() {
+	   $('.question_text').hide();
+	   
+	  }
+	);
+	
+	
+	$('.question_close').click(function (){
+		$('.question_text').hide();
+	});
 	$('.similar-images').slick({
 	        infinite: true,
 	          slidesToShow: 3,

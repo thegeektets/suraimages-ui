@@ -35,7 +35,14 @@
         <div class="top-bar-right inside-page">
           <ul class="menu" data-responsive-menu="medium-dropdown">
               <li class="menu-text"> <a href="#">Welcome  </a></li>
-              <li class="menu-text menu-divider"> <a href="#">gnegechu <i class="fa fa-caret-down" aria-hidden="true"></i>  </a></li>
+              <li class="menu-text menu-divider"> 
+                               <a data-dropdown="menu_account" aria-controls="menu_account" aria-expanded="false"> gnegechu </a>
+                               <ul id="menu_account" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+                                 <li><a href="#">Account</a></li>
+                                 <li><a href="#">Uploads  </a></li>
+                                 <li><a href="#">Sale History</a></li>
+                               </ul>
+              </li>
               <li class="menu-text menu-divider"><a href="#"> Sign Out </a></li>
               <li class="menu-text"><a href="#" class="shopping_cart"> <i class="fa fa-shopping-basket" aria-hidden="true"></i> (2)</a></li>
           </ul>
@@ -49,7 +56,14 @@
       <div class="row">
           <div class="intro_section">
             <div class="large-6 columns pull-left user_details">
-                <img src="assets/img/user_avatar.png" class="user_avatar">
+                
+                 <div class="user_avatar_wrap">
+                  <img src="assets/img/user_avatar.png" class="user_avatar">
+                  <div class="user_upload">
+                    Upload your profile photo                  
+                  </div>
+                </div>
+
                 <div class="user_name">
                     gngechu
                 </div>
@@ -86,20 +100,41 @@
                                                    
           <div class="row tab_report">
                <div class="row">
+                   <div class="large-12 columns">
+                      <div class="alert_message">
+                          <img src="assets/img/alert.png" class="alert_pic">
+                          Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should your feel your work is
+worth being licensed as Right Managed kindly don’t hesitate to communicate to us.
+                      </div>
+
+                      <div class="large-10 columns pull-right">
+                         Upload high resolution JPEG images each with a minimum file size of 8MB and maximum of 10 images
+                          per upload.
+                       </div>
+                       
+                       <div class="large-2 columns pull-left">   
+                         <form action="./assets/filer/php/upload.php" method="post" enctype="multipart/form-data">
+                              <input type="file" name="files[]"  class="more_filer" multiple="multiple">
+                             
+                         </form>
+                       </div>
+                       <hr/>
+                       <div style="clear: both"></div> 
+                   </div>
                    <div class="large-5 columns medium-5 columns pull-left">
                        <form class="reports_search">
-                         <select class="inside_search_slc" id="report_slc">
+                         <select class="inside_search_slc" id="edit_slc">
                              <option value=""> Action </option>
-                             <option value=""> Add Title </option>
-                             <option value=""> Add Keywords </option>
-                             <option value=""> Set Price </option>
-                             <option value=""> Image Type </option>
-                             <option value=""> Image Subtype </option>
-                             <option value=""> Orientation </option>
-                             <option value=""> People </option>
-                             <option value=""> Attach Release </option>
-                             <option value=""> Same Shoot </option>
-                             <option value=""> Model Notification </option>
+                             <option value="Title"> Add Title </option>
+                             <option value="Keywords"> Add Keywords </option>
+                             <option value="Price"> Set Price </option>
+                             <option value="Image Type"> Image Type </option>
+                             <option value="Image Subtype"> Image Subtype </option>
+                             <option value="Orientation"> Orientation </option>
+                             <option value="People"> People </option>
+                             <option value="Attach Release"> Attach Release </option>
+                             <option value="Same Shoot"> Same Shoot </option>
+                             <option value="Model Notification"> Model Notification </option>
                              <option value="" class="delete_option"> Delete </option>
                              
                          </select>
@@ -139,12 +174,101 @@
             </div>
             
                 <div class="row">
-                  <form class="reports_search large-4 columns pull-left">
+                  <div class="reports_search large-6 columns pull-left">
+                    <form class="title">
+                            <div class="add_title">
+                             Add Title  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="add_keywords">
+                            <div class="add_title">
+                             Add Keywords  : 
+                             <textarea type="text" name="" class="inline_input">
+                             </textarea> 
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="set_price">
+                            <div class="add_title">
+                             Set Price  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="image_type">
+                            <div class="add_title">
+                             Image Type  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="image_subtype">
+                            <div class="add_title">
+                             Image Subtype  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="orientation">
+                            <div class="add_title">
+                             Orientation  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="people">
+                            <div class="add_title">
+                             People  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="attach_release">
+                            <div class="add_title">
+                             Attach Release  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="same_shoot">
+                            <div class="add_title">
+                             Same Shoot  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
+                    <form class="model_notification">
+                            <div class="add_title">
+                             Model Notification  : 
+                             <input type="text" name="" class="inline_input">
+                             <button type="submit" class="button btn_search">
+                                 Apply
+                             </button>
+                            </div>
+                    </form>
                     
-                      <button type="submit" class="button btn_search">
-                          Apply
-                    </button>
-                  </form>
+                         
+                  </div>
                 </div>
 
                <div class="report_header">

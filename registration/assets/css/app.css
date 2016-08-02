@@ -1289,7 +1289,6 @@ button.slick-next.slick-arrow {
       margin: auto;
       padding: 30px;
       background: #fff;
-      min-height: 600px;
       box-shadow: 10px 10px 5px #888888;
       border-radius: 5px;
       font-family: 'Raleway', sans-serif;
@@ -1341,6 +1340,7 @@ button.slick-next.slick-arrow {
     margin-top:40px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    font-weight: 700;
   }
 
   .button_reg:hover {
