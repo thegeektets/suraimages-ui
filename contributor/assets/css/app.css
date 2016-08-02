@@ -603,6 +603,7 @@ ul.accordion.search_accordion {
   border: none;
   min-height: 500px;
   font-family: 'Raleway', sans-serif;
+  position: relative;
 }
 .tabs {
 	background: inherit;
@@ -952,15 +953,34 @@ ul#menu_account::before {
 .upload_id {
    margin-bottom: 30px;
 }
-.btn_upload_id {
+.btn_upload {
+    background-color: #f8991c;
+    color: #fff;
+    display: block;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+   
+}
+.btn_upload:hover , .btn_upload:active , .btn_upload:focus {
   background-color: #f8991c;
   color: #fff;
-  display:block;
-  float: right; 
-  margin-top:40px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
+  
+}
+.btn_upload_id {
+    background-color: #f8991c;
+    color: #fff;
+    display: block;
+    float: right;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 80%;
+    position: absolute;
+    right: 10px
 }
 
 .btn_upload_id:hover {
