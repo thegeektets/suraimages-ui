@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calibri.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -88,6 +89,7 @@
                   </ul>
                 </div>
             </div>
+            <div style="clear: both"></div>
           </div>
        </div>
 
@@ -96,14 +98,14 @@
                 <div class="active">
                     <a class="hide_intro"></a>
                 </div>
-            </div>
+            </div>          <div class="contributor_tab">
                               <ul class="tabs contributor_tabs" data-tabs id="contributor-tabs">
                                     <li class="tabs-title is-active"><a href="#account" aria-selected="true"> Account </a></li>
                                     <li class="tabs-title"><a href="#uploads">Uploads (0)</a></li>
                                     <li class="tabs-title"><a href="#sales">Sales History (0)</a></li>
                                     
                               </ul>
-
+                            </div>
                               <div class="tabs-content" data-tabs-content="contributor-tabs">
                                 <div class="tabs-panel is-active contributor_panel" id="account">
 
@@ -232,11 +234,16 @@
 
                                                            </div>
                                                       </form>
-                                                      <input type="checkbox" name="email_sub">
-                                                      Receive a monthly email notification for sales statement
+                                                      
                                                      <button class="button btn_upload_id">Save Changes</button>
+                                                      <div style="clear: both"></div>
+
+                                                     <input type="checkbox" name="email_sub">
+                                                      Receive a monthly email notification for sales statement
                                                   </div>
+
                                                   <div style="clear: both"></div>
+
                                               
                                             </div>
                                             <div class="tabs-panel" id="password">
@@ -283,12 +290,13 @@
                                             <div class="tabs-panel is-active" id="images">
                                               <div class="alert_message">
                                                   <img src="assets/img/alert.png" class="alert_pic">
-                                                  Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should your feel your work is
+                                                  Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should you feel your work is
                                                   worth being licensed as Right Managed kindly don’t hesitate to communicate to us.
                                               </div>
-
+                                              <div class="row">
                                               <div class="large-10 columns pull-right">
-                                                 Upload HD 1080p videos with each file not exceeding 3G in size and maximum of 10 images per upload.
+                                                 Shows us what you are good at by submitting atleast 5 of your best images in JPEG format. Make sure the images are
+                                                 of high quality with a minimum file size of 8MB each.
                                                </div>
                                                
                                                <div class="large-2 columns pull-left">   
@@ -296,6 +304,7 @@
                                                       <input type="file" name="files[]"  class="image_filer" multiple="multiple">
                                                      
                                                  </form>
+                                               </div>
                                                </div>
                                                <hr/>
                                                <div style="clear: both"></div> 
@@ -311,13 +320,13 @@
                                             <div class="tabs-panel" id="videos">
                                                   <div class="alert_message">
                                                   <img src="assets/img/alert.png" class="alert_pic">
-                                                  Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should your feel your work is
+                                                  Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should you feel your work is
                                                   worth being licensed as Right Managed kindly don’t hesitate to communicate to us.
                                               </div>
 
+                                              <div class="row">
                                               <div class="large-10 columns pull-right">
-                                                 Shows us what you are good at by submitting atleast 5 of your best images in JPEG format. Make sure the images are
-                                                 of high quality with a minimum file size of 8MB each.
+                                                Upload HD 1080p videos with each file not exceeding 3G in size and maximum of 10 images per upload.
                                                </div>
                                                
                                                <div class="large-2 columns pull-left">   
@@ -326,17 +335,18 @@
                                                      
                                                  </form>
                                                </div>
-                                                     <div style="clear: both"></div>  
+                                               </div>
                                                   <div style="clear: both"></div>
                                               
                                             </div>
                                             <div class="tabs-panel" id="releases">
                                                     <div class="alert_message">
                                                 <img src="assets/img/alert.png" class="alert_pic">
-                                                Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should your feel your work is
+                                                Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should you feel your work is
                                                 worth being licensed as Right Managed kindly don’t hesitate to communicate to us.
                                             </div>
 
+                                            <div class="row">
                                             <div class="large-10 columns pull-right">
                                                Upload all your releases in either PDF, JPEG, PNG or TIFF format. Each release attached should be less
 than 2MB each.
@@ -347,8 +357,9 @@ than 2MB each.
                                                     <input type="file" name="files[]"  class="release_filer" multiple="multiple">
                                                    
                                                </form>
-                                               </div>
-                                                      <div style="clear: both"></div>
+                                             </div>
+                                             </div>
+                                             <div style="clear: both"></div>
                                                   
                                                 </div>
                                             </div>
@@ -357,6 +368,7 @@ than 2MB each.
                               <div class="tabs-panel contributor_panel" id="sales">
                                     <div class="tab_header">
                                         <div class="row">
+                                          <div class="large-12 columns">
                                             <div class="large-5 columns medium-5 columns pull-left">
                                                 <form class="reports_search">
                                                   <select class="inside_search_slc" id="report_slc">
@@ -382,8 +394,10 @@ than 2MB each.
                                                       <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                                                  </span>
                                             </div>
-                                          </div>
-                                          <div class="row report_filters">
+                                          </div>   
+                                        </div>
+                                        <div class="row report_filters">
+                                            <div class="large-12 columns">
                                                 <div class="sales_filter">
                                                     <div class="row">
                                                     <form class="reports_search">
@@ -450,6 +464,7 @@ than 2MB each.
                                                   </div>
                                                 </div>
                                           </div>
+                                        </div>
                                     </div>
                                     <div class="tab_report">
                                          <div class="report_header">
@@ -587,7 +602,7 @@ than 2MB each.
             
        </div>
        <footer class="inside-footer-bar">
-         <div class="row">
+         <div class="row collapse">
           <div class="large-6 columns medium-7 columns">
             <div class="footer-menu">
 

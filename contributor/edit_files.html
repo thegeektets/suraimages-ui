@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calibri.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -96,16 +97,31 @@
      
        <div class="inside_page">
             <div class="row tab_report">
+                      <ul class="tabs contributor_tabs" data-tabs id="contributor-tabs">
+                            <li class="tabs-title is-active"><a href="#account" aria-selected="true"> Account </a></li>
+                            <li class="tabs-title"><a href="#uploads">Uploads (0)</a></li>
+                            <li class="tabs-title"><a href="#sales">Sales History (0)</a></li>
+                            
+                      </ul>
+                      <div class="" data-tabs-content="contributor-tabs">
+                        <div class="tabs-panel is-active contributor_panel" id="account">
+                            <ul class="tabs inner_contributor_tabs" data-tabs id="upload-tabs">
+                                <li class="tabs-title is-active"><a href="#images" aria-selected="true"> My Images (0) </a></li>
+                                <li class="tabs-title"><a href="#videos">My Videos (0) </a></li>
+                                <li class="tabs-title"><a href="#releases"> Releases (0) </a></li>
+                            </ul>
+                        </div>
+                      </div>
                     <div class="large-12 columns">
                       <div class="alert_message">
                           <img src="assets/img/alert.png" class="alert_pic">
                           Please note, every file you upload will automatically be licensed as Royalty Free until our curator review and deem the file otherwise (Right Managed), but should your feel your work is
 worth being licensed as Right Managed kindly don’t hesitate to communicate to us.
                       </div>
-
-                      <div class="large-10 columns pull-right">
-                         Upload HD 1080p videos with each file not exceeding 3G in size and maximum of 10 images per upload.
-                       </div>
+                    </div>
+                        <div class="large-10 columns pull-right">
+                           Upload HD 1080p videos with each file not exceeding 3G in size and maximum of 10 images per upload.
+                         </div>
                        
                        <div class="large-2 columns pull-left">   
                          <form action="./assets/filer/php/upload.php" method="post" enctype="multipart/form-data">
@@ -114,9 +130,9 @@ worth being licensed as Right Managed kindly don’t hesitate to communicate to 
                          </form>
                        </div>
                        <hr/>
-                       <div style="clear: both"></div> 
-                   </div>
-                     <div class="row">
+                      <div style="clear: both"></div> 
+                      <div class="row">
+                        <div class="large-12 columns">
                          <div class="large-5 columns medium-5 columns pull-left">
                        <form class="reports_search">
                          <select class="inside_search_slc" id="edit_slc">
@@ -166,10 +182,11 @@ worth being licensed as Right Managed kindly don’t hesitate to communicate to 
                              <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                         </span>
                    </div>
-
+                  </div>
             </div>
             
                 <div class="row">
+                  <div class="large-12 columns">
                   <div class="reports_search large-6 columns pull-left">
                     <form class="title">
                             <div class="add_title">
@@ -266,6 +283,7 @@ worth being licensed as Right Managed kindly don’t hesitate to communicate to 
                          
                   </div>
                 </div>
+                </div>
                    <div class="report_header">
                  
                     <div class="row">
@@ -308,7 +326,10 @@ worth being licensed as Right Managed kindly don’t hesitate to communicate to 
                                           54% the price of the large file and Small file is 22% the price of the large file
                                     </span>
                                 </span>
-                                <div class="row">
+                                <div class="alert">
+                                  Your price should not be more than $150 or less than $20
+                                </div>
+                                <div class="row collapse">
                                     <div class="large-4 columns">
                                           <input type="text" name="" placeholder="Price" class="form_group">
                                     </div>
@@ -318,9 +339,7 @@ worth being licensed as Right Managed kindly don’t hesitate to communicate to 
                                     <div class="large-4 columns">
                                           <input type="text" name=""  disabled="" placeholder="Low" class="form_group">
                                     </div>
-                                    <span class="alert">
-                                      Your price should not be more than $150 or less than $20
-                                    </span>
+                                  
                                 </div>
                                 <div class="row">
                                   <form>
@@ -368,8 +387,9 @@ worth being licensed as Right Managed kindly don’t hesitate to communicate to 
                                   </form>
                                 </div>
                           </div>
-                          <div class="large-3 column">
-                                Attach Releases
+                          <div class="large-3 columns">
+                                <div class="large-12 columns">
+                                  Attach Releases  
                                   <span class="question_wrap">
                                       <span class="question_this">
                                          <img src="assets/icons/question.png">
@@ -383,6 +403,7 @@ files by selecting the files then pick the relevant release form from the dropdo
 NB: You must first upload all your release forms in the Release Upload before assigning them to the files.
                                       </span>
                                   </span>
+                                </div>
                                 <div class="large-12 columns">
                                      <div class="row collapse">
                                        <div class="small-10 columns">
@@ -465,7 +486,10 @@ apply button. The files must be selected before applying the code
                           </div>
                           <div class="large-3 column">
                                 Set Price
-                                <div class="row">
+                                <div class="alert">
+                                  Your price should not be more than $150 or less than $20
+                                </div>
+                                <div class="row collapse">
                                     <div class="large-4 columns">
                                           <input type="text" name="" placeholder="Price" class="form_group">
                                     </div>
@@ -475,10 +499,7 @@ apply button. The files must be selected before applying the code
                                     <div class="large-4 columns">
                                           <input type="text" name=""  disabled="" placeholder="Low" class="form_group">
                                     </div>
-                                    <span class="alert">
-                                      Your price should not be more than $150 or less than $20
-                                    </span>
-                                </div>
+                                 </div>
                                 <div class="row">
                                   <form>
                                     <div class="large-6 columns">
@@ -526,7 +547,22 @@ apply button. The files must be selected before applying the code
                                 </div>
                           </div>
                           <div class="large-3 column">
-                                Attach Releases
+                                <div class="large-12 columns">
+                                  Attach Releases  
+                                  <span class="question_wrap">
+                                      <span class="question_this">
+                                         <img src="assets/icons/question.png">
+                                      </span>
+                                      <span class="question_text">
+                                           <a class="question_close">
+                                               <i class="fa fa-times" aria-hidden="true"></i>
+                                           </a>
+                                           If some of your multiple files have the same model or property you can assign that release form on multiple
+files by selecting the files then pick the relevant release form from the dropdown menu then click attach.
+NB: You must first upload all your release forms in the Release Upload before assigning them to the files.
+                                      </span>
+                                  </span>
+                                </div>
                                 <div class="large-12 columns">
                                      <div class="row collapse">
                                        <div class="small-10 columns">
@@ -577,8 +613,6 @@ apply button. The files must be selected before applying the code
                           
                          </div>
                       </div>
-                    </div>
-
                       <div class="edit_footer">
                         <div class="row">
                    
@@ -599,7 +633,7 @@ apply button. The files must be selected before applying the code
             
        </div>
        <footer class="inside-footer-bar">
-         <div class="row">
+         <div class="row collapse">
           <div class="large-6 columns medium-7 columns">
             <div class="footer-menu">
 

@@ -49,7 +49,7 @@ $(document).ready(function(){
 			$(this).parent().find('.accordion-content').show();
 			if($(this).parent().hasClass('search_bar_item')){
 
-				$('.search_results').addClass('large-9');
+				$('.search_results').addClass('large-10');
 				$('.search_img_popup').css('width', '70%');
 				$(".search_img_popup").css("left","22.32rem");
 			}
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 		    if($(this).parent().hasClass('search_bar_item')){
 
-			    $('.search_results').removeClass('large-9');
+			    $('.search_results').removeClass('large-10');
 			    $('.search_img_popup').css('width', '88%');;
 			    $(".search_img_popup").css("left","5.39rem");
 			}
