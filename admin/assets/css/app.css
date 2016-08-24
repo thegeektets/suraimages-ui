@@ -1,6 +1,9 @@
+html,
 body {
   font-family: 'Calibri';
-}
+  margin:0;
+  padding:0;
+ }
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
   height: 2.0rem;
   margin: 0 0 .45rem;
@@ -8,6 +11,12 @@ body {
 .button {
     height: 32px;
     padding: 0.5em 1em;
+}
+.add_title {
+    margin-bottom: 10px;
+}
+.collapse {
+   display: block;
 }
 .home_page {
 	background: url('../img/main_bg.png') no-repeat center center;
@@ -34,10 +43,12 @@ body {
 }
 
 .top-bar {
-	padding: 0px;
-  font-family: 'Calibri';
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
 }
-
 .inside-page > ul {
 	padding-right: 10px;
 	margin-top: 20px;
@@ -47,10 +58,10 @@ body {
 }
 .inside_page_body {
 	background-color: #e6e6e6;		
-
 }
 .inside_body {
-	padding-top: 0px;
+  margin-bottom: 50px;
+  margin-top: 80px;
 }
 .title-bar {
     background: #262134;
@@ -156,11 +167,12 @@ body {
     
 }
 .inside-footer-bar {
-    background: #262134;
-    width: 100%;
-    position: relative;
-    margin-top: 10px;
-     
+   background: #262134;
+   width: 100%;
+   margin-top: 10px;
+   position: fixed;
+   bottom: 0;
+   left: 0;
 }
 .inside-footer-bar > .large-6.columns.medium-7.columns {
     background: #262134;
@@ -604,7 +616,7 @@ ul.accordion.search_accordion {
 .tabs-content {
   background: inherit;
   border: none;
-  min-height: 550px;
+  min-height: 60vh;
   position: relative;
   font-family: 'Calibri';
 }
@@ -1086,10 +1098,12 @@ button.slick-next.slick-arrow {
       float: left;
   }
   .postfix , .postfix:hover , .postfix:active , .postfix:focus {
-      background: #f8991c;
-      float: right;
-      width: 100%;
+     background: #333;
+     font-weight: 500;
+     float: right;
+     margin-bottom: 0px;
   }
+
   /*Sales Section */
   div#sales {
       background: #fff;
@@ -1102,10 +1116,12 @@ button.slick-next.slick-arrow {
       padding-right: 10px;
       padding-top: 5px;
   }
-  button.button.btn_search , button.button.btn_search:hover {
+  .btn_search , .btn_search:hover {
       background-color: #f8991c;
       color: #fff;
       margin: 0px;
+      font-weight: 700;
+      text-transform: uppercase;
   }
   .row.report_filters {
     padding-right: 5px;
@@ -1145,6 +1161,8 @@ button.slick-next.slick-arrow {
       display: block;
       text-align: left;
       font-weight: 700;
+      padding-top: 2px;
+      padding-bottom: 2px;
   }
   .report_header > .row > .column:not(:first-child) {
       text-align: center;
@@ -1201,7 +1219,7 @@ button.slick-next.slick-arrow {
     float: right;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    margin-top: 100px;
+    margin-top: 50px;
     text-transform: uppercase;
     width: 100%;
     padding-top: 10px;
@@ -1295,6 +1313,12 @@ button.slick-next.slick-arrow {
   .admin_tabs > .tabs-title > a:hover{
     background:inherit;
     color:#f89c33;
+    text-decoration: none !important;
+  }
+  .admin_tabs > .tabs-title > a:focus{
+    background:inherit;
+    color:#f89c33;
+    text-decoration: none !important;
   }
   .admin_tabs > .tabs-title.is-active > a {
     background:inherit;
@@ -1338,7 +1362,14 @@ button.slick-next.slick-arrow {
   .inner_admin_tabs > .tabs-title > a:hover{
     background:inherit;
     color:#f89c33;
+    text-decoration: none !important;
   }
+  .inner_admin_tabs > .tabs-title > a:focus{
+    background:inherit;
+    color:#f89c33;
+    text-decoration: none!important;
+  }
+
   .inner_admin_tabs > .tabs-title.is-active > a {
     background:inherit;
     color:#f89c33;
@@ -1438,8 +1469,9 @@ button.slick-next.slick-arrow {
   input[type="text"] {
       font-weight: 300;
   }
+  
   .report_content {
-    min-height: 500px;
+    min-height: 40vh;
   }
 
    /* corrections css */
@@ -1450,6 +1482,7 @@ button.slick-next.slick-arrow {
    }
    .reports_search > form > div > .inline_input {
       width: 60%;
+      display: inline-block;
    }
    .inline_text
    .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
@@ -1466,6 +1499,7 @@ button.slick-next.slick-arrow {
    }
    label {
        position: relative;
+       font-size: 12px;
    }
    .required_asteric {
       font-size: 24px;
@@ -1501,6 +1535,7 @@ button.slick-next.slick-arrow {
     margin-bottom: 10px;
     text-transform: none;
     font-weight: 500;
+    z-index: 2;
 }
 
 

@@ -37,6 +37,8 @@ $(document).ready(function(){
 
 	  }
 	);
+
+	$(".is-active").find('.accordion-content').show();
 	
 	$( ".accordion-title" ).click(function() {
 
@@ -77,8 +79,8 @@ $(document).ready(function(){
 	
 	$('.similar-images').slick({
 	        infinite: true,
-	          slidesToShow: 3,
-	          slidesToScroll: 3
+	        slidesToShow: 3,
+	        slidesToScroll: 3
 	});
 
 

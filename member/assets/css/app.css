@@ -1,6 +1,9 @@
+html,
 body {
   font-family: 'Calibri';
-}
+  margin:0;
+  padding:0;
+ }
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
   height: 2.0rem;
   margin: 0 0 .45rem;
@@ -34,9 +37,12 @@ body {
 }
 
 .top-bar {
-	padding: 0px;
-  font-family: 'Calibri';
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
+
 
 .inside-page > ul {
 	padding-right: 10px;
@@ -51,10 +57,11 @@ body {
 }
 .inside_body {
 	padding-top: 10px;
+  margin-bottom: 50px;
 }
 .title-bar {
-    background: #262134;
-    color :#919194;
+  background: #262134;
+  color :#919194;
 	padding: 0.5rem;
 }
 .title-bar-title {
@@ -158,19 +165,17 @@ body {
 .inside-footer-bar {
     background: #262134;
     width: 100%;
-    position: relative;
     margin-top: 10px;
-     
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 .inside-footer-bar > .large-6.columns.medium-7.columns {
     background: #262134;
 }
-
-
 .inside-footer-bar > .large-6.columns.medium-3.columns {
     background: #262134;
 }
-
 .footer-menu {
     background: #262134;
 }
@@ -767,6 +772,8 @@ button.slick-next.slick-arrow {
   font-family: 'Calibri';
   color:#858487;
   width:100%;
+  margin-bottom: 10px;
+  margin-top: 90px;
 }
 .intro_section > .user_details {
   border-right:1px solid;
@@ -1151,12 +1158,12 @@ button.slick-next.slick-arrow {
       border-bottom: 1px solid;
       display: block;
       text-align: center;
+      font-weight: 700;
   }
 
   .report_col {
       padding-top: 5px;
       padding-bottom: 5px;
-      border-right: 1px solid;
   }
   .report_col:last-child {
       border: none;
@@ -1172,7 +1179,7 @@ button.slick-next.slick-arrow {
     float: right;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    margin-top: 100px;
+    margin-top: 50px;
     text-transform: uppercase;
     width: 100%;
     padding-top: 10px;
@@ -1259,9 +1266,11 @@ button.slick-next.slick-arrow {
     color:#f89c33;
   }
   .member_panel {
-    padding-left:0px  !important;
-    padding-right:0px !important;
-    margin-top: 5px;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    background: #fff;
+    margin-top: 10px;
+    padding-top: 0px;
   }
   .member_panel > .tabs-content {
     background:#fff;

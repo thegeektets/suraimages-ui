@@ -5,6 +5,14 @@ $(document).ready(function(){
 	var state = "open";
 	var popup_state = "closed";
 	var close_btn = "false";
+	
+	$(function() {
+            $('.slc_category').change(function() {
+                console.log($(this).val());
+            }).multipleSelect({
+                width: '100%'
+            });
+        });
 
 	$(".search_img_details").hide();
 	$(".search_img_popup").hide();
@@ -78,10 +86,13 @@ $(document).ready(function(){
 			
 			$(this).parent().removeClass('active');
 			$(".intro_section").css("display","none");
+			$(".contributor_head").css("margin-top","80px");
 
 		} else {
 			$(this).parent().addClass('active');
-			$(".intro_section").css("display","block");			
+			$(".intro_section").css("display","block");	
+			$(".contributor_head").css("margin-top","0px");
+
 		}
 	});
 
@@ -150,7 +161,15 @@ $(document).ready(function(){
 	$('.question_this').hover(
 	  function() {
 	    
-	    $(this).parents('.question_wrap').find('.question_text').show();
+	    if(($(document).width()/2) >= $(this).offset().left ) {
+	     	$(this).parents('.question_wrap').find('.question_text').css( "left", "0" );
+
+	     } else {
+	     	$(this).parents('.question_wrap').find('.question_text').css( "right", "0" );
+	     }
+	      $(this).parents('.question_wrap').find('.question_text').show();
+	   
+
 	  }, function() {
 	   $('.question_text').hide();
 	   
@@ -173,6 +192,7 @@ $(document).ready(function(){
    
 $(".add_keywords").hide();
 $(".set_price").hide();
+$(".category").hide();
 $(".image_type").hide();
 $(".image_subtype").hide();
 $(".orientation").hide();
@@ -198,7 +218,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
-				
+			$(".category").hide();
 		}
 
 		if($(this).val() === 'Keywords'){
@@ -214,6 +234,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
+			$(".category").hide();
 				
 		}
 		
@@ -229,9 +250,22 @@ $("#edit_slc").on('change',function(){
 			$(".same_shoot").hide();
 			$(".model_notification").hide();
 			$(".people").hide();
+			$(".category").hide();
 			
-				
-				
+		}
+		if($(this).val() === 'Category'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".category").show();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
 		}
 		if($(this).val() === 'Image Type'){
 			
@@ -246,7 +280,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
-				
+			$(".category").hide();
 				
 		}
 		if($(this).val() === 'Image Subtype'){
@@ -262,8 +296,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
-				
-				
+			$(".category").hide();
 		}
 		if($(this).val() === 'Orientation'){
 			
@@ -278,7 +311,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
-				
+            $(".category").hide();				
 				
 		}
 		if($(this).val() === 'People'){
@@ -294,8 +327,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").show();
 			$(".set_price").hide();
-				
-				
+			$(".category").hide();
 		}
 		if($(this).val() === 'Attach Release'){
 			
@@ -310,7 +342,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
-				
+			$(".category").hide();
 				
 		}
 		if($(this).val() === 'Same Shoot'){
@@ -326,8 +358,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
-				
-				
+			$(".category").hide();
 		}
 		if($(this).val() === 'Model Notification'){
 			
@@ -342,8 +373,7 @@ $("#edit_slc").on('change',function(){
 			$(".model_notification").show();
 			$(".people").hide();
 			$(".set_price").hide();
-				
-				
+			$(".category").hide();
 		}
 		
 
@@ -360,10 +390,24 @@ $("#edit_slc").on('change',function(){
 		$(".model_notification").hide();
 		$(".people").hide();
 		$(".set_price").hide();
+		$(".category").hide();
 	}
 
-})
-
+});
+$('.payment_type').hide();
+$('#bank').show();
+$("#slc_payment").on('change',function(){
+	if($(this).val()=== 'bank'){
+		$('.payment_type').hide();
+		$('#bank').show();
+	} else if ($(this).val()=== 'mobile'){
+		$('.payment_type').hide();
+		$('#mobile').show();
+	} else {
+		$('.payment_type').hide();
+		$('#email').show();
+	}
+});
 ;(function($) {
 
 		  // Browser supports HTML5 multiple file?

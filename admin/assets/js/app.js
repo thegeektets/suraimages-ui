@@ -6,6 +6,14 @@ $(document).ready(function(){
 	var popup_state = "closed";
 	var close_btn = "false";
 
+	$(function() {
+            $('.slc_category').change(function() {
+                console.log($(this).val());
+            }).multipleSelect({
+                width: '100%'
+            });
+        });
+
 	$(".search_img_details").hide();
 	$(".search_img_popup").hide();
 
@@ -181,6 +189,7 @@ $(document).ready(function(){
 
 	$(".add_keywords").hide();
 	$(".set_price").hide();
+	$(".category").hide();
 	$(".image_type").hide();
 	$(".image_subtype").hide();
 	$(".orientation").hide();
@@ -189,176 +198,14 @@ $(document).ready(function(){
 	$(".model_notification").hide();
 	$(".people").hide();
 	$(".set_price").hide();
-
-	$(".edit_slc").on('change',function(){
+	
+	$("#edit_slc").on('change',function(){
 		console.log('chane');
 		if($(this).val().length > 1) {
 			
 			if($(this).val() === 'Title'){
-				
-				$(".title").show();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-			}
-
-			if($(this).val() === 'Keywords'){
-				
-				$(".title").hide();
-				$(".add_keywords").show();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-			}
 			
-			if($(this).val() === 'Price'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").show();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				
-					
-					
-			}
-			if($(this).val() === 'Image Type'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").show();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-					
-			}
-			if($(this).val() === 'Image Subtype'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").show();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-					
-			}
-			if($(this).val() === 'Orientation'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").show();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-					
-			}
-			if($(this).val() === 'People'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").show();
-				$(".set_price").hide();
-					
-					
-			}
-			if($(this).val() === 'Attach Release'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").show();
-				$(".same_shoot").hide();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-					
-			}
-			if($(this).val() === 'Same Shoot'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").show();
-				$(".model_notification").hide();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-					
-			}
-			if($(this).val() === 'Model Notification'){
-				
-				$(".title").hide();
-				$(".add_keywords").hide();
-				$(".set_price").hide();
-				$(".image_type").hide();
-				$(".image_subtype").hide();
-				$(".orientation").hide();
-				$(".attach_release").hide();
-				$(".same_shoot").hide();
-				$(".model_notification").show();
-				$(".people").hide();
-				$(".set_price").hide();
-					
-					
-			}
-			
-
-
-		} else {
-			$(".title").hide();
+			$(".title").show();
 			$(".add_keywords").hide();
 			$(".set_price").hide();
 			$(".image_type").hide();
@@ -369,7 +216,180 @@ $(document).ready(function(){
 			$(".model_notification").hide();
 			$(".people").hide();
 			$(".set_price").hide();
+			$(".category").hide();
 		}
+
+		if($(this).val() === 'Keywords'){
+			
+			$(".title").hide();
+			$(".add_keywords").show();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+			$(".category").hide();
+				
+		}
+		
+		if($(this).val() === 'Price'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").show();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".category").hide();
+			
+		}
+		if($(this).val() === 'Category'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".category").show();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+		}
+		if($(this).val() === 'Image Type'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").show();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+			$(".category").hide();
+				
+		}
+		if($(this).val() === 'Image Subtype'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").show();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+			$(".category").hide();
+		}
+		if($(this).val() === 'Orientation'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").show();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+            $(".category").hide();				
+				
+		}
+		if($(this).val() === 'People'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").show();
+			$(".set_price").hide();
+			$(".category").hide();
+		}
+		if($(this).val() === 'Attach Release'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").show();
+			$(".same_shoot").hide();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+			$(".category").hide();
+				
+		}
+		if($(this).val() === 'Same Shoot'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").show();
+			$(".model_notification").hide();
+			$(".people").hide();
+			$(".set_price").hide();
+			$(".category").hide();
+		}
+		if($(this).val() === 'Model Notification'){
+			
+			$(".title").hide();
+			$(".add_keywords").hide();
+			$(".set_price").hide();
+			$(".image_type").hide();
+			$(".image_subtype").hide();
+			$(".orientation").hide();
+			$(".attach_release").hide();
+			$(".same_shoot").hide();
+			$(".model_notification").show();
+			$(".people").hide();
+			$(".set_price").hide();
+			$(".category").hide();
+		}
+		
+
+
+	} else {
+		$(".title").hide();
+		$(".add_keywords").hide();
+		$(".set_price").hide();
+		$(".image_type").hide();
+		$(".image_subtype").hide();
+		$(".orientation").hide();
+		$(".attach_release").hide();
+		$(".same_shoot").hide();
+		$(".model_notification").hide();
+		$(".people").hide();
+		$(".set_price").hide();
+		$(".category").hide();
+	}
 
 	})
 

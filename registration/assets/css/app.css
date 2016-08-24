@@ -11,6 +11,8 @@ body {
 }
 .member {
   background: #d7df23;
+  font-weight: 700;
+  color: #333;
 }
 .member:hover , .member:focus {
   background: #fff;
@@ -19,6 +21,8 @@ body {
 }
 .contributor {
   background: #c2b59b;
+  font-weight: 700;
+  color: #333;
 }
 .contributor:hover , .contributor:focus {
   background: #fff;
@@ -167,8 +171,6 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    padding-top: 10px;
-    
 }
 .inside-footer-bar {
     background: #262134;
@@ -1314,12 +1316,12 @@ button.slick-next.slick-arrow {
       text-align: right;
   }
   .registration_body {
-      width: 32vw;
+      width: 30vw;
       margin: auto;
-      padding: 30px;
+      padding: 15px;
       background: #fff;
-      box-shadow: 10px 10px 5px #888888;
-      border-radius: 5px;
+      box-shadow: 5px 5px 4px #888888;
+      border-radius: 3px;
       font-family: 'Calibri';
   }
   .register_header {
@@ -1366,8 +1368,8 @@ button.slick-next.slick-arrow {
     color: #fff;
     display:block;
     width: 100%;
-    margin-top: 2vh;
-    margin-bottom: 20px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     text-transform: uppercase;
     font-weight: 700;
   }

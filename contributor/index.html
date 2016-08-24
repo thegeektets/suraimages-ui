@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sura Images | Contributor  </title>
 
+    <link rel="stylesheet" href="assets/multiselect/bootstrap/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="assets/css/calibri.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/multiselect/multiple-select.css" />
 
     <!--Stylesheets-->
     <link href="assets/filer/css/jquery.filer.css" type="text/css" rel="stylesheet" />
@@ -194,14 +196,14 @@
 
                                                           <div class="large-4 columns">
                                                           
-                                                           <select  class="form_group">
-                                                               <option>Bank Payment</option>
-                                                               <option>Mobile Payment</option>
-                                                              
+                                                           <select  class="form_group" id="slc_payment">
+                                                               <option value="bank">Bank Payment</option>
+                                                               <option value="mobile">Mobile Payment</option>
+                                                               <option value="email">Email Payment</option>
                                                            </select>
 
                                                            </div>
-                                                           <div class="large-4 columns">
+                                                           <div class="large-4 columns payment_type" id="bank">
                                                             <div class="tab_title">
                                                                Bank Payment:
                                                            </div>
@@ -219,18 +221,22 @@
                                                                 <input type="text" name="" placeholder="Branch Name" class="form_group">
 
                                                             </div>
-                                                            <div class="large-4 columns">
-                                                            
+                                                            <div class="large-4 columns pull-left">
+                                                              
+                                                              <div class="payment_type" id=mobile>
                                                               <div class="tab_title">
                                                                Mobile Payment:
                                                                </div>
                                                                <label>Mobile Number: <span class="required_asteric">*</span></label>
                                                                    <input type="text" name="" placeholder="Mobile Number" class="form_group">
+                                                              </div>
+                                                              <div class="payment_type" id="email">
                                                               <div class="tab_title">
                                                                Email Payment:
                                                                </div>
                                                                <label>Email Address: <span class="required_asteric">*</span></label>
                                                                    <input type="text" name="" placeholder="Email Address" class="form_group">
+                                                              </div>
 
                                                            </div>
                                                       </form>
@@ -367,8 +373,7 @@ than 2MB each.
                                       </div>
                               <div class="tabs-panel contributor_panel" id="sales">
                                     <div class="tab_header">
-                                        <div class="row">
-                                          <div class="large-12 columns">
+                                        <div class="row collapse">
                                             <div class="large-5 columns medium-5 columns pull-left">
                                                 <form class="reports_search">
                                                   <select class="inside_search_slc" id="report_slc">
@@ -394,9 +399,8 @@ than 2MB each.
                                                       <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                                                  </span>
                                             </div>
-                                          </div>   
                                         </div>
-                                        <div class="row report_filters">
+                                        <div class="row collapse report_filters">
                                             <div class="large-12 columns">
                                                 <div class="sales_filter">
                                                     <div class="row">
@@ -466,7 +470,7 @@ than 2MB each.
                                           </div>
                                         </div>
                                     </div>
-                                    <div class="tab_report">
+                                    <div class="large-12 columns">
                                          <div class="report_header">
                                             <div class="row">
 
@@ -638,5 +642,7 @@ than 2MB each.
     <script src="assets/js/vendor/fontAwesome.js"></script>
     <script src="assets/js/vendor/slick.min.js"></script>
     <script src="assets/js/app.js"></script>    
+    
+    <script src="assets/multiselect/multiple-select.js"></script>
   </body>
 </html>

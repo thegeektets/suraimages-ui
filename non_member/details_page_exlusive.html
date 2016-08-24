@@ -21,26 +21,26 @@
       <div class="title-bar-title">Sura Images </div>
     </div>
 
-    
-   <div class="top-bar" id="main-menu">
-          <div class="row">
-            <div class="top-bar-left">
-                <div class="home_logo">
-            </div>
-            </div>
-             <div class="top-bar-right">
-                  <ul class="menu" data-responsive-menu="medium-dropdown">
-                      <li class="menu-text menu-divider"> <a href="#">Sign in  </a></li>
-                      <li class="menu-text"><a href="#"> Register </a></li>
-                  </ul>
-              </div>
-           </div>
+    <div class="top-bar" id="main-menu">
+        <div class="top-bar-left">
+            <div class="home_logo">
+        </div>
+        </div>
+        <div class="top-bar-right inside-page">
+          <ul class="menu" data-responsive-menu="medium-dropdown">
+              <li class="menu-text menu-divider"> <a href="#">Sign in  </a></li>
+              <li class="menu-text menu-divider"><a href="#"> Register </a></li>
+              <li class="menu-text"><a href="#" class="shopping_cart"> <i class="fa fa-shopping-basket" aria-hidden="true"></i> (2)</a></li>
+              
+          </ul>
+        </div>
+     
     </div>
 
  
 
   <div class="inside_body">
-      <div class="row collapse">
+      <div class="row">
             <div class="large-6 columns pull-left">
                     <form class="inside_search_frm">
                       <input type="text" name="search" placeholder="Forest" class="inside_search_txt">
@@ -55,18 +55,14 @@
                     </form>
             </div>
        </div>
-       <div class="row collapse">
+       <div class="row">
             <div class="large-6 columns pull-left">
-                <div class="search_display_img">
                 <img src="assets/img/search_image.png" class="search_display_img">
                 
                 <div class="search_img_exclusive">
                    Available for purchase from 5th September, 2016
                 </div>
-                </div>
-                <div class="similar_links pull-right">
-                  <a href="search_page.html"> Download Sample Image </a> 
-                </div>
+                
                 <div class="search_popup_details">
 
                     <div class="search_popup_title">Title 
@@ -146,13 +142,86 @@
                       </a>
                       
                       <div class="accordion-content search_details_accordion_content" data-tab-content>
+                            <div>
+                                <ul class="tabs" data-tabs id="example-tabs">
+                                  <span class="center_tabs">
+                                      <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Standard License</a></li>
+                                      <li class="tabs-title"><a href="#panel2">Exclusive License</a></li>
+                                  </span>
+                                </ul>
 
-                            <div class="tabs-content" data-tabs-content="example-tabs">
-                                
-                                  <div class="search_price_exclusive">
-                                     Sorry. This image has exlusive license assigned to it. It will be available for purchase from 5th September, 2016
+                                <div class="tabs-content" data-tabs-content="example-tabs">
+                                  <div class="tabs-panel is-active" id="panel1">
+                                      <hr style="border-top: solid 1px;" />
+                                      <div class="row">
+                                          <div class="quality_column">
+                                            <input type="radio" name="quality"> Small
+                                          </div>
+                                          <div class="desc_column">
+                                              <p>500x250px | 6x4cm | 72dpi | 500KB</p>
+                                          </div>
+                                          <div class="price_column">
+                                            <span class="price">$35</span>
+                                          </div>
+                                      </div>
+                                      <hr style="border-top: solid 1px;" />
+                                      <div class="row">
+                                          <div class="quality_column">
+                                            <input type="radio" name="quality"> Medium
+                                          </div>
+                                          <div class="desc_column">
+                                             <p>1200x750px | 13x8.5cm | 150dpi | 2MB</p>
+                                          </div>
+                                          <div class="price_column">
+                                             <span class="price">$85</span>
+                                          </div>
+                                      </div>
+                                      <hr style="border-top: solid 1px;" />
+                                      <div class="row">
+                                          <div class="quality_column">
+                                            <input type="radio" name="quality"> Large
+                                          </div>
+                                          <div class="desc_column">
+                                            <p>5000x3200px | 22x14cm | 300dpi | 14MB</p>
+                                          </div>
+                                          <div class="price_column">
+                                            <span class="price">$190</span>
+                                          </div>
+                                      </div>
+                                      <div class="price_footer">
+                                            License Fee : $00
+                                      </div>
+                                      <div class="price_footer">
+                                            <button class="button success"> Add to Basket</button>
+                                      </div>
+                                      <div class="search_price_exclusive">
+                                         Available for purchase from 5th September, 2016
+                                      </div>
+
                                   </div>
-                               
+                                  <div class="tabs-panel" id="panel2">
+                                    <p>Exclusive license search_price_exclusivemeans that the licensee/ the buyer has exclusive rights to the content (Images, Videos) they
+                                      buy for a speci ed period of time. Meaning, the licensee will be the only person to use the content s for the
+                                      stipulated period of time and within that period the content s will be inactive for purchase from any other
+                                      licensee until the duration of the license e pires. See our Exclusivity & Control page for more information.</p>
+
+                                      <div class="">
+                                        <input type="radio" name="duration"> 1 Month </br> 
+                                        <input type="radio" name="duration"> 3 Months </br> 
+                                        <input type="radio" name="duration"> 6 Months </br> 
+                                        <input type="radio" name="duration"> 1 Year </br> 
+                                        <input type="radio" name="duration"> 2 Years </br> 
+                                      </div>
+
+                                      <div class="price_footer">
+                                            License Fee : $00
+                                      </div>
+                                      <div class="price_footer">
+                                            <button class="button success"> Add to Basket</button>
+                                      </div>
+
+                                  </div>
+                                </div>
                             </div>
                       </div>
                     </li>
@@ -210,7 +279,7 @@ region and sub region to help licensee understand the distribution of the conten
                   </ul>
                   
             </div>
-            <div class="row collapse">
+            <div class="row">
                   <div class="similar_links">
                     Same Shoot | <a href="search_page.html"> View All </a> 
                   </div>
@@ -249,9 +318,8 @@ region and sub region to help licensee understand the distribution of the conten
             </div>
             
        </div>
-
-    <footer class="inside-footer-bar">
-         <div class="row collapse">
+       <footer class="large-12 columns inside-footer-bar">
+     
           <div class="large-6 columns medium-7 columns">
             <div class="footer-menu">
 
@@ -272,8 +340,9 @@ region and sub region to help licensee understand the distribution of the conten
               <span class="copyright"> Copyright &copy; 2016 SuraImages </span>
 
           </div>
-        </div>
-  
+         
+
+      
     </footer>
 
 
