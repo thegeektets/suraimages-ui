@@ -1,3 +1,34 @@
+body {
+  font-family: 'Calibri';
+}
+[type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {
+  height: 2.0rem;
+  margin: 0 0 .45rem;
+}
+.button {
+    height: 32px;
+    padding: 0.5em 1em;
+}
+.member {
+  background: #d7df23;
+  font-weight: 700;
+  color: #333;
+}
+.member:hover , .member:focus {
+  background: #fff;
+  color: #d7df23;
+  border: 1px solid #d7df23;
+}
+.contributor {
+  background: #c2b59b;
+  font-weight: 700;
+  color: #333;
+}
+.contributor:hover , .contributor:focus {
+  background: #fff;
+  color: #c2b59b;
+  border: 1px solid #c2b59b;
+}
 .home_page {
 	background: url('../img/main_bg.png') no-repeat center center;
 	-webkit-background-size: cover;
@@ -46,7 +77,7 @@
 	padding: 0.5rem;
 }
 .title-bar-title {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-weight: 700;
 	color :#919194;
 	font-size: 14px;
@@ -54,7 +85,7 @@
 	line-height: inherit;
 }
 .menu-text , .menu-text a {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-weight: 300;
 	color :#919194;
 	font-size: 12px;
@@ -69,7 +100,7 @@
 .menu-divider:after {
 	content: "";
     display: inline-block;
-    background: url('../icons/divider.png') no-repeat; 
+    background: url('../icons/divider.png') repeat-y; 
     width: 2px;
     height: 20px;
     float: right;
@@ -101,7 +132,7 @@
 	text-align: center;
 	font-size: 20px;
 	color:#fff;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Calibri';
 }
 .frm_home_search {
 	
@@ -113,7 +144,7 @@
 	width: 70%;
 	height: inherit;
 	border: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 }
 .slt_home_search {
 	float: left;
@@ -124,7 +155,7 @@
 	border: none;
 	border-left:1px solid #000;
 	margin-top: 5px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 
 }
 .btn_home_search {
@@ -140,8 +171,6 @@
     width: 100%;
     position: fixed;
     bottom: 0px;
-    padding-top: 10px;
-    
 }
 .inside-footer-bar {
     background: #262134;
@@ -163,7 +192,7 @@
     background: #262134;
 }
 .copyright {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-weight: 300;
 	color :#919194;
 	font-size: 12px;
@@ -223,7 +252,7 @@
  }
 
  .accordion-content > ul > li > a {
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Calibri';
  	font-weight: 300;
  	color: #807f83;
  	font-size: 14px;
@@ -238,7 +267,7 @@
  	 width: 80%;
  	 margin-top: 10px;
  	 margin-bottom: 20px;
- 	 font-family: 'Raleway', sans-serif;
+ 	 font-family: 'Calibri';
  	 font-size: 14px;
  	 padding: 0.1rem;
  	 height: 1.8rem;
@@ -246,14 +275,14 @@
  	  
  }
  .accordion-title {
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Calibri';
  	font-weight: 700;
  	color: #807f83;
  	border: none;
  	background-color: #d8d0c7;
  }
  .accordion-title:hover , .accordion-title:focus{
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Calibri';
  	font-weight: 700;
  	color: #807f83;
  	background-color: #d8d0c7;
@@ -267,14 +296,14 @@
 
 
  .accordion-item > a {
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Calibri';
  	font-weight: 700;
  	color: #807f83;
  	border: none;
  	background-color: #d8d0c7;
  }
  .accordion-item:hover , .accordion-item:focus{
- 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Calibri';
  	font-weight: 700;
  	color: #807f83;
  	background-color: #d8d0c7;
@@ -337,14 +366,14 @@
  }
  .btn-search , .btn-search:hover {
  		background-color: #f8991c;
- 		font-family: 'Raleway', sans-serif;
+ 		font-family: 'Calibri';
  		margin-top: 10px;
  		font-size: 14px;
  		color: #000;
  }
  .btn-clear , .btn-clear:hover {
  		background-color: #fff;
- 		font-family: 'Raleway', sans-serif;
+ 		font-family: 'Calibri';
  		margin-top: 10px;
  		font-size: 14px;
  		color: #000;		
@@ -362,7 +391,7 @@
      border: none;
      float: left;
      width: 60%;
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Calibri';
      font-size: 14px;
      height: 30px;
      box-shadow:none;
@@ -372,7 +401,7 @@
      float: left;
      width: 30%;
      font-size: 14px;
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Calibri';
      border: none;
      border-left: 1px solid #cacaca;
      border-right: 1px solid #cacaca;
@@ -387,7 +416,7 @@
 }
 .search_pagination {
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     margin-top: 10px;
     margin-bottom: 10px;
     display: block;
@@ -406,7 +435,7 @@
 }
 .pagination_slc {
 	font-size: 14px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	border: none;
 	display: inline-block;
 	width: 130px;
@@ -436,7 +465,7 @@
     bottom: 10px;
     background: rgba(255,0,0,0.6);
     width: 96%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     color: #fff;
     font-size:12px;
     padding:5px;
@@ -445,7 +474,7 @@
     color: #fff;
     font-size: 10px;
     width: 70%;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     float: left;
     padding-left: 5px;
     padding-right: 5px;
@@ -491,7 +520,7 @@
 }
 .search_popup_details {
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     width: 100%;
     float: left;
     color: #807f83;
@@ -522,7 +551,7 @@ ul.accordion.search_accordion {
     background-color: #231f20;
 }
 .search_accordion_item > a , .search_accordion_item > a:hover  , .search_accordion_item > a:focus{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
     font-weight: 700;
     color: #fff;
     border: none;
@@ -535,7 +564,7 @@ ul.accordion.search_accordion {
 .search_accordion_content {
     background-color: #231f20;
     border: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
     font-weight: 400;
     color: #807f83;
     font-size: 14px;
@@ -548,7 +577,7 @@ ul.accordion.search_accordion {
     background-color: #e6e6e6;
 }
 .search_details_accordion_item > a , .search_details_accordion_item > a:hover  , .search_details_accordion_item > a:focus{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
     font-weight: 700;
     color: #807f83;
     border: none;
@@ -561,7 +590,7 @@ ul.accordion.search_accordion {
 .search_details_accordion_content {
     background-color: #e6e6e6;
     border: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
     font-weight: 400;
     color: #807f83;
     font-size: 14px;
@@ -576,7 +605,7 @@ ul.accordion.search_accordion {
     background-color: #231f20;
 }
 .search_popup_accordion_item > a , .search_popup_accordion_item > a:hover  , .search_popup_accordion_item > a:focus{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
     font-weight: 700;
     color: #807f83;
     border: none;
@@ -589,7 +618,7 @@ ul.accordion.search_accordion {
 .search_popup_accordion_content {
     background-color: #231f20;
     border: none;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
     font-weight: 400;
     color: #807f83;
     font-size: 14px;
@@ -633,14 +662,14 @@ ul.accordion.search_accordion {
 .quality_column {
 	width: 20%;
 	display: inline-block;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-size: 12px;
 	/*padding: 10px;*/
 }
 .desc_column {
 	width: 50%;
 	display: inline-block;	
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-size: 12px;
 	/*padding: 10px;*/
 	text-align: center;
@@ -649,7 +678,7 @@ ul.accordion.search_accordion {
 .desc_column > p {
 	width: 50%;
 	display: inline-block;	
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-size: 12px;
 	/*padding: 10px;*/
 /*	text-align: center;
@@ -657,7 +686,7 @@ ul.accordion.search_accordion {
 .price_column {
 	width: 20%;
 	display: inline-block;	
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Calibri';
 	font-size: 12px;
 	/*padding: 10px;*/
 }
@@ -714,10 +743,10 @@ button.slick-next.slick-arrow {
     padding-top:10px;
     padding-bottom:10px;
     padding-left:22px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
 }
  .similar_links > a {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
 }
 .search_price_exclusive {
     position: absolute;
@@ -750,7 +779,7 @@ button.slick-next.slick-arrow {
 /* Intro Section */
 
 .intro_section {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
   color:#858487;
   width:100%;
 }
@@ -826,12 +855,12 @@ button.slick-next.slick-arrow {
   width:100%;
   background:#fff;
   height:auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
 }
 .contributor_tabs > .tabs-title > a {
   padding-top: 15px;
   line-height: inherit;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
   font-weight:300;
   font-size:21px;
   border-right:1px solid;
@@ -861,7 +890,7 @@ button.slick-next.slick-arrow {
   width:100%;
   background:#fff;
   height:auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
   border-top:1px solid;
   border-bottom:1px solid;
   padding-top: 5px;
@@ -870,7 +899,7 @@ button.slick-next.slick-arrow {
 .inner_contributor_tabs > .tabs-title > a {
   padding-top: 5px;
   line-height: inherit;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
   font-weight:300;
   font-size:18px;
   border-right:1px solid;
@@ -888,12 +917,12 @@ button.slick-next.slick-arrow {
 }
 
 .tab_title {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
   font-size: 21px; 
 }
 
 .tab_content {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Calibri';
   font-size: 14px;  
   width: 80%;
   margin:0 auto;
@@ -1013,7 +1042,7 @@ button.slick-next.slick-arrow {
   .edit_content {
       padding-right: 30px;
       padding-left: 20px;
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Calibri';
   }
   .edit_file_img {
     width: 150px;
@@ -1050,6 +1079,8 @@ button.slick-next.slick-arrow {
   }
   select {
       font-size: 12px;
+      height: 32px;
+      margin: 0 0 .45rem;
   }
   textarea {
       max-width: 100%;
@@ -1102,7 +1133,7 @@ button.slick-next.slick-arrow {
 
   /*Report Section */
   .tab_report {
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Calibri';
       font-size: 14px;
       width: 90%;
       margin: 0 auto;
@@ -1168,12 +1199,12 @@ button.slick-next.slick-arrow {
     width:100%;
     background:#fff;
     height:auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
   }
   .member_tabs > .tabs-title > a {
     padding-top: 15px;
     line-height: inherit;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     font-weight:300;
     font-size:21px;
     border-right:1px solid;
@@ -1205,7 +1236,7 @@ button.slick-next.slick-arrow {
     width:100%;
     background:#fff;
     height:auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     border-top:1px solid;
     border-bottom:1px solid;
     padding-top: 5px;
@@ -1214,7 +1245,7 @@ button.slick-next.slick-arrow {
   .inner_member_tabs > .tabs-title > a {
     padding-top: 5px;
     line-height: inherit;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Calibri';
     font-weight:300;
     font-size:18px;
     border-right:1px solid;
@@ -1285,14 +1316,13 @@ button.slick-next.slick-arrow {
       text-align: right;
   }
   .registration_body {
-      width: 50%;
+      width: 30vw;
       margin: auto;
-      padding: 30px;
+      padding: 15px;
       background: #fff;
-      min-height: 600px;
-      box-shadow: 10px 10px 5px #888888;
-      border-radius: 5px;
-      font-family: 'Raleway', sans-serif;
+      box-shadow: 5px 5px 4px #888888;
+      border-radius: 3px;
+      font-family: 'Calibri';
   }
   .register_header {
       padding-top: 10px;
@@ -1338,8 +1368,10 @@ button.slick-next.slick-arrow {
     color: #fff;
     display:block;
     width: 100%;
-    margin-top:40px;
-    margin-bottom: 20px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+    font-weight: 700;
   }
 
   .button_reg:hover {
@@ -1360,7 +1392,7 @@ button.slick-next.slick-arrow {
   .menu_switch {
    float: right;
    text-align: right;
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Calibri';
    font-size: 12px;
    padding-bottom: 10px;
    padding-right:10px;
@@ -1372,4 +1404,68 @@ button.slick-next.slick-arrow {
   .menu_switch > a > img {
    width: 14px;
    margin-right:5px;
+  }
+
+   /* corrections css */
+   input.inline_input {
+       display: inline-block;
+       width: 60%;
+       margin-left: 5px;
+   }
+
+   .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+       content: '';
+       display: block;
+       width: 0;
+       height: 0;
+       border: inset 5px;
+       border-color: #f8991c transparent transparent;
+       border-top-style: solid;
+       border-bottom-width: 0;
+       right: 5px;
+       margin-top: -2px;
+   }
+   label {
+       position: relative;
+   }
+   .required_asteric {
+      font-size: 24px;
+      margin-left: 5px;
+      color: #ed272f;
+      position: absolute;
+  }
+  .question_wrap {
+    position: relative;
+  }
+
+  .question_this {
+      height: 24px;
+      padding: 5px;
+    
+      text-align: center;
+  }
+  .question_this > img {
+      height: 14px;
+      margin-top: 5px;
+      
+  }
+  .question_text {
+      display: block;
+      padding: 15px;
+      padding-top: 20px;
+      font-size: 12px;
+      background-color: #fff6be;
+      position: absolute;
+      width: 500px;
+      bottom: 100%;
+      left: 0%;
+      margin-bottom: 10px;
+  }
+
+  .question_close {
+      color: #333;
+      position: absolute;
+      top: 5px;
+      right: 10px;
+    
   }

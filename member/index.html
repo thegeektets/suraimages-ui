@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calibri.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -48,7 +49,7 @@
           </ul>
           <div class="menu_switch">
               <a href="#">
-                  <img src="assets/img/change_account.png">
+                  <img src="assets/img/switch.png">
                   Switch to Contributor
               </a>
           </div>
@@ -62,7 +63,15 @@
       <div class="row">
           <div class="intro_section">
             <div class="large-6 columns pull-left user_details">
-                <img src="assets/img/user_avatar.png" class="user_avatar">
+                <div class="user_avatar_wrap">
+                  <div class="user_avatar_wrap">
+                                   <img src="assets/img/user_avatar.png" class="user_avatar">
+                                   <div class="user_upload">
+                                     Upload your profile photo                  
+                                   </div>
+                  </div>
+                  
+                </div>
                 <div class="user_name">
                      Jane Makali
                 </div>
@@ -111,25 +120,25 @@
                                 <div class="tab_content">
                                     <form class="contact_info">
                                       <div class="large-4 columns">
-                                        <label>First Name : *</label>
+                                        <label>First Name : <span class="required_asteric">*</span></label>
                                         <input type="text" name="" placeholder="Name" class="form_group">
-                                        <label>Postal Address : *</label>
+                                        <label>Postal Address : <span class="required_asteric">*</span></label>
                                         <input type="text" name="" placeholder="0000" class="form_group">
-                                        <label>City/Town : *</label>
+                                        <label>City/Town : <span class="required_asteric">*</span></label>
                                         <input type="text" name="" placeholder="Nairobi" class="form_group">
-                                        <label>Telephone Number : *</label>
+                                        <label>Telephone Number : <span class="required_asteric">*</span></label>
                                         <input type="text" name="" placeholder="0000" class="form_group">
                                       </div>
                                       <div class="large-4 columns">
-                                        <label>Middle Name: *</label>
+                                        <label>Middle Name: <span class="required_asteric">*</span></label>
                                         <input type="text" name="" placeholder="Name" class="form_group">
                                         <label>2 Postal Address (Optional)</label>
                                         <input type="text" name="" placeholder="0000" class="form_group">
-                                        <label>Country: *</label>
+                                        <label>Country: <span class="required_asteric">*</span></label>
                                         <select  name="" class="form_group">
                                             <option>Kenya</option>
                                         </select>
-                                        <label>Email: *</label>
+                                        <label>Email: <span class="required_asteric">*</span></label>
                                         <input type="text" name="" placeholder="gngechu@gmail.com" class="form_group">
                                       </div>
                                       <div class="large-4 columns">
@@ -139,9 +148,9 @@
                                         <input type="text" name="" placeholder="0000" class="form_group">
                                       </div>
                                     </form>
-                                    <button class="button btn_upload_id">Save Changes</button>
+                                    
                                 </div>
-                                   
+                                <button class="button btn_upload_id">Save Changes</button>   
                                 <div style="clear: both"></div>
                             
                           </div>
@@ -155,14 +164,14 @@
                                           
                                              <div class="large-6 columns">
                                             
-                                              <label>Old Password *</label>
+                                              <label>Old Password <span class="required_asteric">*</span></label>
                                                   <input type="password" name="" placeholder="Old Password" class="form_group">
 
-                                              <label>New Password *</label>
+                                              <label>New Password <span class="required_asteric">*</span></label>
                                                   <input type="password" name="" placeholder="New Password" class="form_group">
 
 
-                                              <label>Confirm Password *</label>
+                                              <label>Confirm Password <span class="required_asteric">*</span></label>
                                                   <input type="password" name="" placeholder="Confirm Password" class="form_group">
 
                                         </form>
@@ -332,7 +341,18 @@
                                                             <input type="text" placeholder="Email Address ">
                                                           </div>
                                                           <div class="small-5 columns">
-                                                            <a href="#" class="button postfix">Get A Qoute </a>
+                                                            <a href="#" class="button postfix">Get A Quote </a>
+                                                              <span class="question_wrap">
+                                                                  <span class="question_this">
+                                                                     <img src="assets/icons/question.png">
+                                                                  </span>
+                                                                  <span class="question_text">
+                                                                       <a class="question_close">
+                                                                           <i class="fa fa-times" aria-hidden="true"></i>
+                                                                       </a>
+                                                                       Provide an email address in the email address bar then click "Get A Quote" button for a quotation of selected items to be sent. Please note you cannot get a quote without selecting the items from  the shopping basket.
+                                                                  </span>
+                                                              </span>
                                                           </div>
                                                         </div>
                                                       </div>
@@ -452,7 +472,7 @@
             <div class="tabs-panel member_panel" id="history">
                   <div class="tab_header">  
                       <div class="row">
-                          
+                        <div class="large-12 columns">
                           <div class="large-4 columns medium-4 columns pull-right">
                                <span class="search_pagination"> 
                                  <select class="pagination_slc">
@@ -467,7 +487,8 @@
                                </span>
                           </div>
                         </div>
-                  <div class="tabs_content tab_report">
+                      </div>
+                  <div class="tabs_content">
                        <div class="report_header">
                           <div class="row">
 
@@ -494,88 +515,88 @@
                        <div class="report_content">
                             <div class="report_item">
                               <div class="row">
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     <img src="assets/img/search_image.png">
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     0012354
                                 </div>
-                                <div class="large-5 column report_col">
+                                <div class="large-5 column ">
                                     Equatorial Forest
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                     Royalty Free
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                      28th Dec, 2015
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     $15
                                 </div>
                                </div>
                             </div>
                             <div class="report_item">
                               <div class="row">
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     <img src="assets/img/search_image.png">
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     0012354
                                 </div>
-                                <div class="large-5 column report_col">
+                                <div class="large-5 column ">
                                     Equatorial Forest
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                     Right Managed
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                      28th Dec, 2015
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     $15
                                 </div>
                                </div>
                             </div>
                             <div class="report_item">
                               <div class="row">
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     <img src="assets/img/search_image.png">
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     0012354
                                 </div>
-                                <div class="large-5 column report_col">
+                                <div class="large-5 column ">
                                     Equatorial Forest
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                     R-F Exclusive for 6 months
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                      28th Dec, 2015
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     $15
                                 </div>
                                </div>
                             </div>
                             <div class="report_item">
                               <div class="row">
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     <img src="assets/img/search_image.png">
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     0012354
                                 </div>
-                                <div class="large-5 column report_col">
+                                <div class="large-5 column ">
                                     Equatorial Forest
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                     Royalty Free
                                 </div>
-                                <div class="large-2 column report_col">
+                                <div class="large-2 column ">
                                      28th Dec, 2015
                                 </div>
-                                <div class="large-1 column report_col">
+                                <div class="large-1 column ">
                                     $15
                                 </div>
                                </div>
@@ -591,32 +612,32 @@
             
        </div>
      </div>
-       <footer class="inside-footer-bar">
-         <div class="row">
-          <div class="large-6 columns medium-7 columns">
-            <div class="footer-menu">
+     <footer class="inside-footer-bar">
+       <div class="row collapse">
+        <div class="large-6 columns medium-7 columns">
+          <div class="footer-menu">
 
-              <ul class="menu">
-                  <li class="menu-text menu-divider"> <a href="#"> Home </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> About Us </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> Terms & Conditions </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> Contact Us </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> Resources </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> FAQs </a></li>
-                  <li class="menu-text"><a href="#"> Blog </a></li>
-              </ul>
-              
-            </div>
-
+            <ul class="menu">
+                <li class="menu-text menu-divider"> <a href="#"> Home </a></li>
+                <li class="menu-text menu-divider"><a href="#"> About Us </a></li>
+                <li class="menu-text menu-divider"><a href="#"> Terms & Conditions </a></li>
+                <li class="menu-text menu-divider"><a href="#"> Contact Us </a></li>
+                <li class="menu-text menu-divider"><a href="#"> Resources </a></li>
+                <li class="menu-text menu-divider"><a href="#"> FAQs </a></li>
+                <li class="menu-text"><a href="#"> Blog </a></li>
+            </ul>
+            
           </div>
-          <div class="large-6 columns medium-3 columns">
-              <span class="copyright"> Copyright &copy; 2016 SuraImages </span>
 
-          </div>
         </div>
+        <div class="large-6 columns medium-3 columns">
+            <span class="copyright"> Copyright &copy; 2016 SuraImages </span>
 
-      
-    </footer>
+        </div>
+      </div>
+
+    
+  </footer>
 
 
     

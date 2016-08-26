@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/calibri.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
    
@@ -20,26 +21,25 @@
       <div class="title-bar-title">Sura Images </div>
     </div>
 
-    <div class="top-bar" id="main-menu">
-        <div class="top-bar-left">
-            <div class="home_logo">
-        </div>
-        </div>
-        <div class="top-bar-right inside-page">
-          <ul class="menu" data-responsive-menu="medium-dropdown">
-              <li class="menu-text menu-divider"> <a href="#">Sign in  </a></li>
-              <li class="menu-text menu-divider"><a href="#"> Register </a></li>
-              <li class="menu-text"><a href="#" class="shopping_cart"> <i class="fa fa-shopping-basket" aria-hidden="true"></i> (2)</a></li>
-              
-          </ul>
-        </div>
-     
+   <div class="top-bar" id="main-menu">
+          <div class="row">
+            <div class="top-bar-left">
+                <div class="home_logo">
+            </div>
+            </div>
+             <div class="top-bar-right">
+                  <ul class="menu" data-responsive-menu="medium-dropdown">
+                      <li class="menu-text menu-divider"> <a href="#">Sign in  </a></li>
+                      <li class="menu-text"><a href="#"> Register </a></li>
+                  </ul>
+              </div>
+           </div>
     </div>
 
  
 
   <div class="inside_body">
-      <div class="row">
+      <div class="row collapse">
             <div class="large-6 columns pull-left">
                     <form class="inside_search_frm">
                       <input type="text" name="search" placeholder="Forest" class="inside_search_txt">
@@ -54,10 +54,12 @@
                     </form>
             </div>
        </div>
-       <div class="row">
+       <div class="row collapse">
             <div class="large-6 columns pull-left">
                 <img src="assets/img/search_image.png" class="search_display_img">
-                
+                 <div class="similar_links pull-right">
+                   <a href="search_page.html"> Download Sample Image </a> 
+                 </div>
                 <div class="search_popup_details">
 
                     <div class="search_popup_title">Title 
@@ -270,7 +272,7 @@ region and sub region to help licensee understand the distribution of the conten
                   </ul>
                   
             </div>
-            <div class="row">
+            <div class="row collapse">
                   <div class="similar_links">
                     Same Shoot | <a href="search_page.html"> View All </a> 
                   </div>
@@ -309,8 +311,9 @@ region and sub region to help licensee understand the distribution of the conten
             </div>
             
        </div>
-       <footer class="large-12 columns inside-footer-bar">
-     
+
+    <footer class="inside-footer-bar">
+         <div class="row collapse">
           <div class="large-6 columns medium-7 columns">
             <div class="footer-menu">
 
@@ -331,10 +334,10 @@ region and sub region to help licensee understand the distribution of the conten
               <span class="copyright"> Copyright &copy; 2016 SuraImages </span>
 
           </div>
-         
-
-      
+        </div>
+  
     </footer>
+
 
 
     

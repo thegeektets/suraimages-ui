@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="assets/css/foundation.css">
    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
    <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/calibri.css">
    <link rel="stylesheet" href="assets/css/app.css">
    <link rel="stylesheet" href="assets/css/responsive.css">
 
@@ -20,7 +21,8 @@
       <div class="title-bar-title">Sura Images </div>
     </div>
 
-    <div class="top-bar" id="main-menu">
+     <div class="top-bar" id="main-menu">
+      <div class="large-12 columns">
         <div class="top-bar-left">
             <div class="home_logo">
         </div>
@@ -35,13 +37,13 @@
         </div>
      
     </div>
-
+  </div>
  
 
   <div class="inside_body">
     
 
-    <div class="large-3 columns search_bar" >
+    <div class="large-2 columns search_bar" >
         <ul class="accordion" data-accordion>
           <li class="search_bar_item accordion-item is-active" data-accordion-item>
             <a href="#" class="accordion-title" id="optimize-accordion">Optimize Your Search </a>
@@ -50,31 +52,95 @@
                 <li>
                   <a href="#">License Type</a>
                   <ul class="menu vertical nested">
-                    <li><select class="accordion_select"><option>License Type</option></select></li>
+                    <li>
+                      <select  name="" class="accordion_select">
+                         <option>Select Image Type</option>
+                         <option>Royalty Free</option>
+                         <option>Right Managed</option>
+                      </select>
+
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <a href="#">Image Type</a>
                   <ul class="menu vertical nested">
-                    <li><select class="accordion_select"><option>Image Type</option></select></li>
+                    <li>
+                      <select  name="" class="accordion_select">
+                         <option>Select Image Type</option>
+                         <option>Creative Image</option>
+                         <option>Editorial Image</option>
+                      </select>
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <a href="#">Orientation</a>
                   <ul class="menu vertical nested">
-                    <li><select class="accordion_select"><option>Orientation</option></select></li>
+                    <li>
+                      <select  name="" class="accordion_select">
+                         <option>Select Orientation</option>
+                         <option>Landscape </option>
+                         <option>Potrait</option>
+                      </select>
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <a href="#">People</a>
                   <ul class="menu vertical nested">
-                    <li><select class="accordion_select"><option>People</option></select></li>
+                    <li>
+                      <select class="accordion_select">
+                        <option>People</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+
+                    </li>
                   </ul>
                 </li>
                 <li>
                   <a href="#">Category</a>
                   <ul class="menu vertical nested">
-                    <li><select class="accordion_select"><option>Category</option></select></li>
+                    <li>
+                        <select  name="" class="accordion_select">
+                            <option>Abstract</option>
+                            <option>Agriculture/ Farming </option>
+                            <option>Animals/ Livestock </option>
+                            <option>Arts/ Entertainment </option>
+                            <option>Beauty/ Fashion </option>
+                            <option>Business </option>
+                            <option>Buildings/ Landmarks </option>
+                            <option>Celebrity </option>
+                            <option>Education </option>
+                            <option>Food/ Cuisines </option>
+                            <option>Beverage/ Drink </option>
+                            <option>Medical/ Healthcare </option>
+                            <option>Holiday </option>
+                            <option>Industrial </option>
+                            <option>Interior </option>
+                            <option>Nature </option>
+                            <option>Outdoor </option>
+                            <option>People </option>
+                            <option>Religion </option>
+                            <option>Signs/ Symbols </option> 
+                            <option>Sports </option>
+                            <option>ICT/ Technology </option>
+                            <option>Infrastructure </option>
+                            <option>Vintage </option>
+                            <option>Telecommunication </option>
+                            <option>Tourism/ Hospitality </option>
+                            <option>Wildlife </option>
+                        </select> 
+                    </li>
                   </ul>
                 </li>
                 <li>
@@ -94,14 +160,13 @@
           <!-- ... -->
         </ul>
     </div>
-    <div class="large-9 columns pull-right">
-    <div class="row">
+    <div class="large-10 columns pull-right no-padding">
         <div class="large-5 columns medium-5 columns pull-left">
             <form class="inside_search_frm">
               <input type="text" name="search" placeholder="Forest" class="inside_search_txt">
               <select class="inside_search_slc">
                   <option value="Images">Images</option>
-                  <option value="Videos">Vidoes</option>
+                  <option value="Videos">Videos</option>
                   <option value="Illustrations">Illustrations</option>
               </select>
               <button type="submit" class="inside_search_btn">
@@ -122,16 +187,14 @@
                   <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
              </span>
         </div>
-      </div>
     </div>
 
 
 
-    <div class="large-9 columns pull-right search_results">
+    <div class="large-10 columns pull-right search_results no-padding">
          
-          <div class="row">
-              <div class="large-3 columns search_results_img">
-                  
+          <div class="large-12 columns">
+                <div class=" search_results_img">
                   <a href="details_page.html" class="search_img">
                     <img src="assets/img/search_image.png" >
                   </a>
@@ -140,9 +203,9 @@
                     <span class="search_img_icons">
                         <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
                         <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                        <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                        <a href=""><img src="assets/icons/expand.png"></a>
                     </span>
-                  </div>
+                 </div>
 
                   <div class="search_img_popup">
                       <div class="search_close_popup">
@@ -360,232 +423,244 @@
                   </div>
 
               </div>
-              <div class="large-3 columns search_results_img">
+              <div class=" search_results_img">
                   <img src="assets/img/search_image.png" class="search_img">
                   <div class="search_img_details"> 
                   <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
                   <span class="search_img_icons">
                     <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
                     <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                    <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
+                    <a href=""><img src="assets/icons/expand.png"></a>
                   </span>
                   </div>
               </div>
-              <div class="large-3 columns search_results_img">
+              <div class=" search_results_img">
                   <a href="details_exclusive_page.html" class="search_img">
                     <img src="assets/img/search_image.png" >
                   </a>
-
-                  <div class="search_img_exclusive">
-                     Available for purchase from 5th September, 2016
-                  </div>
+                  <div class="search_img_details search_img_exclusive"> 
+                      <span class="search_img_title">  Available for purchase from 5th September, 2016 </span>
+                  </div>    
+              </div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
                   <div class="search_img_details"> 
-                      <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-                      <span class="search_img_icons">
-                          <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-                          <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-                          <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-                      </span>
-                      </div>    
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                        <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                        <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                  </div>
+              </div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
                 </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                        <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                        <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                  </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                    <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                    </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                        <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                        <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                    </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                    <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                  </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                    <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                  </div>
+             </div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                   <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                    </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                        <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                        <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                  </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                    <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                    <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                  </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                    <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                    <span class="search_img_icons">
+                        <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                        <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                        <a href=""><img src="assets/icons/expand.png"></a>
+                    </span>
+                  </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
+              <div class=" search_results_img">
+                  <img src="assets/img/search_image.png" class="search_img">
+                  <div class="search_img_details"> 
+                  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
+                  <span class="search_img_icons">
+                      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
+                      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+                      <a href=""><img src="assets/icons/expand.png"></a>
+                  </span>
+                </div>
               </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
-              </div>
-              <div class="large-3 columns search_results_img">
-                  <img src="assets/img/search_image.png" class="search_img"><div class="search_img_details"> 
-  <span class="search_img_title"> Sunrays Cutting Through Kinale Forest</span>
-  <span class="search_img_icons">
-      <a href=""><i class="fa fa-calculator" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-arrows-alt" aria-hidden="true"></i></a>
-  </span>
-</div>
-              </div>
+              <div style="clear: both"></div>
           </div>
-          <div class="row">
-              <div class="large-5 columns pull-left">
+        
+        <div class="large-12 columns">
+              <div class="large-5 columns pull-left no-padding">
                   <form class="inside_search_frm">
                     <input type="text" name="search" placeholder="Forest" class="inside_search_txt">
                     <select class="inside_search_slc">
                         <option value="Images">Images</option>
-                        <option value="Videos">Vidoes</option>
+                        <option value="Videos">Videos</option>
                         <option value="Illustrations">Illustrations</option>
                     </select>
                     <button type="submit" class="inside_search_btn">
@@ -593,7 +668,7 @@
                     </button>
                   </form>
               </div>
-              <div class="large-4 columns pull-right">
+              <div class="large-4 columns pull-right no-padding">
                    <span class="search_pagination"> 
                  
                      Page <input type="number" name="page_number" placeholder="1" class="page_number"> of 120 
@@ -601,36 +676,35 @@
                         <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
                    </span>
               </div>
-          </div>
+        </div>
+        <div style="clear: both"></div>
     </div>
-  
+    <div style="clear: both"></div>
   </div>
-     <footer class="inside-footer-bar">
-     
-          <div class="large-6 columns medium-7 columns">
-            <div class="footer-menu">
+  
+  <footer class="inside-footer-bar">
+        <div class="large-6 columns medium-7 columns">
+          <div class="footer-menu">
 
-              <ul class="menu">
-                  <li class="menu-text menu-divider"> <a href="#"> Home </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> About Us </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> Terms & Conditions </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> Contact Us </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> Resources </a></li>
-                  <li class="menu-text menu-divider"><a href="#"> FAQs </a></li>
-                  <li class="menu-text"><a href="#"> Blog </a></li>
-              </ul>
-              
-            </div>
-
+            <ul class="menu">
+                <li class="menu-text menu-divider"> <a href="#"> Home </a></li>
+                <li class="menu-text menu-divider"><a href="#"> About Us </a></li>
+                <li class="menu-text menu-divider"><a href="#"> Terms & Conditions </a></li>
+                <li class="menu-text menu-divider"><a href="#"> Contact Us </a></li>
+                <li class="menu-text menu-divider"><a href="#"> Resources </a></li>
+                <li class="menu-text menu-divider"><a href="#"> FAQs </a></li>
+                <li class="menu-text"><a href="#"> Blog </a></li>
+            </ul>
+            
           </div>
-          <div class="large-6 columns medium-3 columns">
-              <span class="copyright"> Copyright &copy; 2016 SuraImages </span>
 
-          </div>
-         
+        </div>
+        <div class="large-6 columns medium-3 columns">
+            <span class="copyright"> Copyright &copy; 2016 SuraImages </span>
 
-      
-    </footer>
+        </div>
+        <div style="clear: both"></div>
+  </footer>
 
 
   <script src="assets/js/vendor/jquery.js"></script>
